@@ -1,8 +1,8 @@
-* {
+*{
  	box-sizing: border-box;
  	/* Opera/IE 8+ */
- -moz-box-sizing: border-box;  Firefox, autres Gecko 
-   -webkit-box-sizing: border-box; Safari/Chrome, autres WebKit
+ -moz-box-sizing: border-box; /* Firefox autres Gecko*/
+   -webkit-box-sizing: border-box; /*Safari/Chrome, autres WebKit*/
  	font-family: 'Raleway', roboto, sans-serif;
  	margin: 0;
  	padding: 0;
@@ -11,6 +11,7 @@
  	font-weight: bold;
  	font-size: 16px;
  }
+ h2{
  	font-size: 18px;
  }
  h1, h2, h3{
