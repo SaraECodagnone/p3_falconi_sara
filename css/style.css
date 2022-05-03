@@ -2,8 +2,8 @@
  {
  	box-sizing: border-box;
  	/* Opera/IE 8+ */
- -moz-box-sizing: border-box;  Firefox, autres Gecko 
-   -webkit-box-sizing: border-box; Safari/Chrome, autres WebKit
+ /* -moz-box-sizing: border-box;  /*Firefox, autres Gecko */
+  /* -webkit-box-sizing: border-box; Safari/Chrome, autres WebKit */
  	font-family: 'Raleway', sans-serif,'Roboto','Shrikhand';
  	margin: 0;
  	padding: 0;
@@ -12,21 +12,25 @@
  ul {
  	list-style-type: none;
  }
+ h1{
+	 font-size: 26px;
+	 margin:0.67em 0;
+	 text-align: center;
+	 width:100%;
+ }
+
+
  
 
-
-
- 
-
- 	.oh-my-food_page {
+ 	.oh__my__food__page {
  		display: flex;
  		flex-wrap: wrap;
- 		justify-content: center;
+		  		justify-content: center;
  		width: 100%;
  		height: auto;
  	 	}
 
- 	.menu_principal {
+ 	.menu__principal {
  		display: flex;
  		flex-wrap: wrap;
  		flex-direction: column;
@@ -37,7 +41,7 @@
 
 
  
- 	.header_oh-my-food {
+ 	.header__oh__my__food {
  		display: flex;
  		flex-wrap: wrap;
  			flex-direction: column;
@@ -46,8 +50,7 @@
  	 	margin: 10px 10px 10px 10px;
  	 	background-color: #F2F2F2;
  	}
-
- 	#logo_oh-my-food {
+ 	#logo__oh__my__food {
  		display: flex;
  		flex-wrap: wrap;
 justify-content: center;
@@ -65,13 +68,18 @@ justify-content: center;
  	width: 100%;
  	}
 
- 	.icone_localisation {
+ 	.icone__localisation {
  		color: black;
  		padding: 10px;
   	}
 #loc{
  		color: black;
  	}
+	 .desc__oh__my__food{
+		 display:flex;
+		 flex-wrap: wrap;
+		 justify-content: center;
+	 }
  	/*
  	*Bouton explorez nos restaurants
  	*/
@@ -92,7 +100,7 @@ justify-content: center;
   *
 *@media screen and (min-width: 992px){
 }*/
- 	.titres_fonctionnement{
+ 	.titres__fonctionnement{
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
@@ -137,14 +145,14 @@ z-index: 0;
 		z-index: 1;
 		top: 60px;
 	}
-	.icone_fcnt{
+	.icone__fcnt{
 		display: flex;
 		flex-wrap: wrap;
 		margin: 10px;
 		padding: 10px;
 	}
-	.desc_fcnt{
-		dispaly: flex;
+	.desc__fcnt{
+		display: flex;
 		flex-wrap: wrap;
 		margin: 10px;
 		padding: 10px;
@@ -208,7 +216,7 @@ margin: 10px;
 	padding: 2px;
 }
 
-.desc_restaurants{
+.desc__restaurants{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -216,14 +224,14 @@ margin: 10px;
 		margin: 10px;
 			}
 
-.premier_desc{
+.premier__desc{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
 	height: 20px;
 	}
-	.desc_titre{
+	.desc__titre{
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -233,7 +241,7 @@ margin: 10px;
 	font-size: 18px;
 	}
 
-	.icone_heart_border{
+	.icone__heart__border{
 	display: flex;
 	flex-wrap: wrap;
 		align-content: center;
@@ -255,11 +263,12 @@ position: relative;
 	z-index: 0;
 	opacity: 0;
 	}*/
-		.icone_heart_border:hover{
+		.icone__heart__border:hover{
 			cursor: pointer;
+			color:#9356DC
 /*		opacity: 1;*/
 	}
-.seconde_desc{
+.seconde__desc{
 	display: flex;
 	flex-wrap: wrap;
 	width: 340px;
@@ -408,7 +417,7 @@ footer p{
 		width: 100%;
 		height: auto;
 			}
-		.card_restaurants{
+		.card__restaurants{
 		display: flex;
 		flex-wrap: wrap;
 				width: 100%;
@@ -463,7 +472,7 @@ margin: 10px;
 		width: 100%;
 		height: auto;
 			}
-		.card_restaurants{
+		.card__restaurants{
 		display: flex;
 		flex-wrap: wrap;
 				width: 100%;

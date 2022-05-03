@@ -83,7 +83,7 @@ justify-content: center;
 	border-top-left-radius: 60px;
 	border-top-right-radius: 60px;
 position: relative;
-z-index: 1;
+z-index: 0;
 }
 .desc_restaurants{
 	display: flex;
@@ -91,12 +91,12 @@ z-index: 1;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	
+	background-color: #F2F2F2;
 		border-top-left-radius: 80px;
 	border-top-right-radius: 80px;
 	position: relative;
-	z-index: 2;
-	bottom: 40px;
+	z-index: 1;
+	bottom: 80px;
 	padding: 20px;
 }
 .desc_restaurants h1{
@@ -302,7 +302,7 @@ footer p{
 	display: flex;
 	flex-wrap: wrap;
 	border: 2px solid #F2F2F2;
-width: 40%;
+width: 48%;
 }
 		.image__restaurant{
 display: flex;
