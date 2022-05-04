@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "sass": "sass --watch ./sass/main.scss:sass_css/style.css"
-      },
-      "author": "",
-  "license": "ISC"
+    "sass": "sass --watch /sass_css:$fichier.scss:sass_css/$fichier.css"
+  },
+  "author": "sara",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
 }
