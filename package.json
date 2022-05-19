@@ -1,10 +1,22 @@
-{    "name": "sass_projet_3",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "sass": "sass --watch ./sass_scss/main.scss:./css/style.css"
-    },
-    "author": "",
-    "license": "ISC"
-    }
+{
+  "name": "p3_falconi_sara",
+  "version": "1.0.0",
+  "description": "Projet_3_Falconi_Sara",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/lapalettedugout.scss:.public/css/restaurants.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraECodagnone/p3_falconi_sara.git"
+  },
+  "author": "Sara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaraECodagnone/p3_falconi_sara/issues"
+  },
+  "homepage": "https://github.com/SaraECodagnone/p3_falconi_sara#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}
