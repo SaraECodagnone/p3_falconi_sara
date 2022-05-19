@@ -442,6 +442,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background-color: #F2F2F2;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
   position: relative;
