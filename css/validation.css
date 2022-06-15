@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes rotate-360 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate-360 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes progression-barre {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes progression-barre {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.progression {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+  border: solid 2px black;
+}
+
+.progression_checkval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 18%;
+  height: 200px;
+  text-align: center;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  opacity: 0;
+}
+
+.rotation_checkval {
+  display: flex;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  opacity: 0;
+}
+
+.plats__couts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  margin: 6px;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.desc_plats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 248px;
+  /*  white-space: nowrap; 
+    overflow: hidden;
+      text-overflow: ellipsis; */
+}
+
+.couts {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  width: 10%;
+}
+
+.plats__couts:hover {
+  cursor: pointer;
+}
+
+.plats__couts:active + .progression_checkval {
+  -webkit-animation: progression-barre 1s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation: progression-barre 1s ease;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  transform-origin: right;
+}
+.plats__couts:active + .progression_checkval > .rotation_checkval {
+  -webkit-animation: rotate-360 1s ease;
+  -webkit-animation-fill-mode: forwards;
+  animation: rotate-360 1s ease;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -4,8 +4,15 @@
   "description": "Projet_3_Falconi_Sara",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/restaurants.css"
+    "sass": "sass --watch ./sass/main.scss:./css/main.css"
   },
+
+
+  
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css"
+  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SaraECodagnone/p3_falconi_sara.git"
@@ -19,4 +26,6 @@
   "dependencies": {
     "sass": "^1.51.0"
   }
+
+  
 }
