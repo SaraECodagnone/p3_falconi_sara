@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .loading_spinner{
+   display:flex;
+justify-content: center;
+    }
+.loader {
+    margin:300px;
+    border:16px solid black;
+    border-radius: 50%;
+  border-top: 16px solid #f2f2f2;
+  border-right: 16px solid black;
+  border-bottom: 16px solid #f2F2F2;
+  border-left: 16px solid black;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Pour tous les navigateurs */
+  animation: spin 2s linear infinite;
+}
+
+/*Pour tous les navigateurs */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+    <div class="loading_spinner">
+<div class="loader"></div>
+</div>
+</body>
+</html>
