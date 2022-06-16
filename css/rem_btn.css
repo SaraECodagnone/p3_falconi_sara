@@ -1,0 +1,26 @@
+
+.btn {
+    background:white;
+    border: 4px solid black;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-size: 3rem;
+    overflow: hidden;
+    padding: 1.85rem 3rem;
+    position: relative;
+   
+   
+}
+.btn:hover {
+ transform: scaleY(1.13);
+ background:linear-gradient(#FF79DA,#9356DC);
+ animation:gradient 16s linear infinite;
+ transform-origin: right;
+}
+@keyframes gradient{
+from {transform:scaleX(0);
+}
+to {
+    transform: scaleX(1);
+}
+}
