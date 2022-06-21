@@ -1,24 +1,19 @@
 * {
   box-sizing: border-box;
 }
-
 h1 {
   font-weight: bold;
   font-size: 16px;
 }
-
 h2 {
   font-size: 18px;
 }
-
 h1, h2, h3 {
   font-weight: bold;
   width: 100%;
   margin: 3px;
 }
-
-
-@-webkit-keyframes rotate-360 {
+ @-webkit-keyframes rotate-360 {
   from {
     transform: rotateZ(0deg);
   }
@@ -34,45 +29,47 @@ h1, h2, h3 {
     transform: rotateZ(360deg);
   }
 }
-@-webkit-keyframes progression-barre {
+@-webkit-keyframes validation_ok {
   from {
     transform: scaleX(0);
+    opacity:1;
   }
   to {
     transform: scaleX(1);
-  }
+    opacity:0;
+    }
 }
-@keyframes progression-barre {
+@keyframes validation_ok {
   from {
     transform: scaleX(0);
+    opacity:1;
   }
   to {
     transform: scaleX(1);
+    opacity:0;
   }
-}
-.section__plats__principales {
+.plats__principales {
   display: flex;
   flex-wrap: wrap;
   background-color: #F2F2F2;
 width: 100%;
 border: solid 2px black;
 }
+
 .progression_menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   height: auto;
-
-
 }
-.anim_plats{
+.anim-plats{
   display:flex;
   flex-wrap: wrap;
 width:100%;
 height: auto;
 }
-.progression_checkval {
+.progression-checkval {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,35 +79,34 @@ height: auto;
   text-align: center;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
-  opacity: 0;
+  /* opacity: 0;
   position:relative;
-   z-index: 2;
+   z-index: 1; */
 }
 
-.rotation_checkval {
+.rotation-checkval {
   display: flex;
   justify-content: center;
   background-color: #99E2D0;
   width: 40px;
   height: 40px;
   text-align: center;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .plats__couts {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   border-radius: 40px;
   background-color: #FFFFFF;
   margin: 6px;
   padding: 2px;
   justify-content: space-between;
   align-items: center;
-  position:relative;
-  z-index:1;
+  /* position:absolute;
+  z-index:0; */
 }
-
 .plats {
   display: flex;
   flex-wrap: wrap;
@@ -133,26 +129,66 @@ height: auto;
   font-weight: bold;
   min-width: 40px;
 }
+.plats__couts__valide{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  margin: 6px;
+  padding: 2px;
+  justify-content: space-between;
+  align-items: center;
+  /* position:relative;
+  z-index:1;
+  opacity:0; */
+  text-overflow: ellipsis;
+}
+.plats__valide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.desc_plats__valide {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 200px;
+    overflow: hidden;
+      text-overflow: ellipsis; 
+}
+
+.couts__valide {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  min-width: 40px;
+}
 
 .plats__couts:hover {
   cursor: pointer;
 }
 
-.plats__couts:active + .progression_checkval {
-  -webkit-animation: progression-barre 1s ease;
-  -webkit-animation-fill-mode: forwards;
-  animation: progression-barre 1s ease;
-  animation-fill-mode: forwards;
-  opacity: 1;
-  transform-origin: right;
+.plats__couts:active +.plats__couts__valide {
+  animation:coulisser_ok 0.3s linear reverse forwards;
+  -webkit-animation:coulisser_ok 0.3s linear reverse forwards;
+  -moz-animation:coulisser_ok 0.3s linear reverse forwards;
+  -ms-animation:coulisser_ok 0.3s linear reverse forwards;
 }
-.plats__couts:active + .progression_checkval > .rotation_checkval {
-  -webkit-animation: rotate-360 1s ease;
-  -webkit-animation-fill-mode: forwards;
-  animation: rotate-360 1s ease;
-  animation-fill-mode: forwards;
-  opacity: 1;
-  /* visibility: visible; */
+.plats__couts:active +.plats__couts__valide > .progression-checkval  {
+  -webkit-animation: validation_ok 1s linear reverse forwards;
+  animation:validation_ok 1s linear reverse forwards;
+  -moz-animation:validation_ok 0.3s linear reverse forwards;
+  -ms-animation:validation_ok 0.3s linear reverse forwards;
+}
+.plats__couts:active +.plats__couts__valide > .progression-checkval > .rotation-checkval {
+  -webkit-animation: rotate-360 1s ease forwards;
+  animation: rotate-360 1s ease forwards;
+  -moz-animation: rotate-360 1s ease forwards;
+  -ms-animation: rotate-360 1s ease forwards;
+}
 }
 
-/*# sourceMappingURL=main.css.map */
+

@@ -1,0 +1,20 @@
+/* remplisage heart radial-gradient */
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+svg{
+    animation: remp-color 2s linear 5s forwards;
+transform-origin: right;
+}
+@keyframes remp-color {
+ from{
+    transform:scaleX(0);
+    fill: white;
+}
+to {transform: scaleX(1);
+fill: #9356DC;
+}
+}

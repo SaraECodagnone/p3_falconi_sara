@@ -1,0 +1,28 @@
+@-webkit-keyframes validation_ok{
+    0% {
+        transform:translateX(0px);
+    }
+    100% {
+        transform:translateX(200px);
+          }  
+}
+@keyframes validation_ok{
+0% {
+    transform:translateX(0px);
+    opacity:1;
+ }
+100% {
+    transform:translateX(200px);
+    opacity:0;
+      }
+}
+.val_ok {
+    margin:300px;
+    width:100px;
+    height: 100px;
+    background-color:#99E2D0;
+    animation:validation_ok 0.3s linear reverse forwards;
+    -webkit-animation:validation_ok 0.3s linear reverse forwards;
+    -moz-animation:validation_ok 0.3s linear reverse forwards;
+    -ms-animation:validation_ok 0.3s linear reverse forwards;
+  }
