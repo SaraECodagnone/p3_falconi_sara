@@ -1,0 +1,40 @@
+ /*remplisage heart radial-gradient*/
+/* @keyframes remp-color {
+ from{
+      transform: translateX(0px);
+            }
+to {
+    transform: translateX(25px);
+    }
+} */
+.icone_heart_1, .icone_heart_2{
+    margin:250px;
+    padding:25px;
+    width:25px;
+    height: 25px;
+}
+.heart_1{
+  fill:#9356DC;
+  stroke:#9356DC;
+  stroke-width: 23px;
+}
+
+.icone_heart_2{
+  /*blanc*/
+ position:absolute;
+  z-index: 1;
+} 
+ .icone_heart_1{
+  /*lila*/
+ position:absolute;
+  z-index: 0; 
+opacity:0
+ }  
+.icone_heart_2:hover >.heart_2 {
+cursor:pointer; 
+fill:#9356DC;
+opacity:0;
+            }
+      .icone_heart_2:hover + .icone_heart_1{
+        opacity:1;
+      }
