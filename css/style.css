@@ -19,7 +19,31 @@
 	 width:100%;
  }
 
-
+ 
+ .loading_spinner{
+    display:flex;
+  justify-content: center;
+  width: 100%;
+  height: max-content;
+  background-color:#F2F2F2;
+   position:absolute;
+  z-index: 0;
+  -moz-animation: spin 2s steps(3) forwards;
+  -webkit-animation: spin 2s steps(3) forwards; 
+  animation: spin 2s steps(3) forwards;
+     }
+  .loader {
+     margin:300px;
+     border:16px solid #FF79DA;
+     border-radius: 50%;
+   border-top: 16px solid #9356DC;
+   border-right: 16px solid #F2F2F2;
+   border-bottom: 16px solid #99E2D0;
+   border-left: 16px solid #FF79DA;
+   width: 80px;
+   height: 80px;
+  
+  }
  
 
  	.oh__my__food__page {
