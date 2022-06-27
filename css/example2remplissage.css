@@ -1,5 +1,4 @@
 * {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
-
     /* Animations */
     @keyframes animB {
       from{opacity:0;}
@@ -7,11 +6,7 @@
         opacity:1;
       }
     }
-
-
-    /* Usage de l'animation */
-    #logo {margin:1em;}
-    #logo svg {display:block; overflow:visible;}
-    #logo #B path {stroke-dasharray:1000; stroke-dashoffset:1000; stroke-linecap:square; stroke:none; fill:url(#gradient1); animation:animB 1.5s linear forwards;}
+  #logo svg {display:block; overflow:visible;}
+  #logo #B path {stroke-dasharray:10000; stroke-dashoffset:10000; stroke-linecap:round; stroke:none; fill:url(#gradient1); animation:animB 3s linear forwards;}
     .icone_heart_1 svg {display:block; overflow:visible;}
     .icone_heart_1 #S path {stroke-dasharray:10000; stroke-dashoffset:10000; stroke-linecap:round; stroke:none; fill:url(#gradient1); animation:animB 3s linear forwards;}

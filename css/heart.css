@@ -20,7 +20,7 @@
   from {
     stroke:black;
     fill:white;
- }
+    }
  to{
   stroke:none;
 fill:url(#MGradient);
@@ -28,5 +28,5 @@ fill:url(#MGradient);
 }
     .icone_heart_1 svg:hover{
       cursor:pointer;
-      animation: remp-color 0.3s ease forwards;
+      animation: remp-color 1s ease forwards;
     }
