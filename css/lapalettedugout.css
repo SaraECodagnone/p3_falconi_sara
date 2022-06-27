@@ -114,8 +114,7 @@ z-index: 1;
 .heart{
     width:18px;
     height: 18px;
-    background-color: #99E2D0;
-}
+ }
 .heart:hover{
    cursor:pointer;
    color:#FF79DA;

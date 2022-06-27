@@ -4,10 +4,16 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
-    .loading_spinner{
+ .loading-spinner{
    display:flex;
 justify-content: center;
     }
+  .loading-spinner:active{
+  opacity:0;
+}
+.loading-spinner:active > .loader{
+  opacity:0;
+}
 .loader {
     margin:300px;
     border:16px solid #FF79DA;
@@ -18,32 +24,35 @@ justify-content: center;
   border-left: 16px solid #FF79DA;
   width: 80px;
   height: 80px;
-  -moz-animation: spin 2s linear infinite ;
-  -webkit-animation: spin 2s linear infinite; 
-  animation: spin 2s linear infinite;
-}
-.refresh{
-  width: 80px;
-  height: 80px;
-  -moz-animation: spin 2s linear infinite ;
-  -webkit-animation: spin 2s linear infinite; 
-  animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite forwards;
+  -webkit-animation: spin 2s linear infinite forwards; 
+  animation: spin 2s linear infinite forwards;
 }
 
 /*Pour tous les navigateurs */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+@-webkit-keyframes vis {
+  0% {opacity:1 ; }
+  100% {opacity:0; }
+}
+
+@keyframes vis {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+
 </style>
 </head>
 <body>
-    <div class="loading_spinner">
+    <div class="loading-spinner">
       <div class="loader"></div>
 <!-- <div class="refresh"><i class="material-icons">refresh</i></div> -->
 </div>

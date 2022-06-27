@@ -1,0 +1,49 @@
+* {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+  /* Animations */
+    @keyframes animB {
+      100% {
+        stroke-dashoffset:0;
+      }
+    }
+    @keyframes animUxerolles {
+      80% {
+        fill:transparent;
+        stroke-dashoffset:0;
+      }
+      100% {
+        stroke-dashoffset:0;
+        fill:#5d5d5d;
+      }
+    }
+    @keyframes animLS {
+      100% {
+        stroke:#f16b5f;
+      }
+    }
+    @keyframes animL {
+      to {
+        stroke:#ebac20;
+      }
+    }
+    @keyframes animVille {
+      to {
+        stroke-dashoffset:0;
+        fill:#5d5d5d;
+      }
+    }
+
+    /* Usage de l'animation */
+    #logo {margin:1em;}
+    #logo svg {display:block; overflow:visible;}
+    #logo #B path {stroke-dasharray:1000; stroke-dashoffset:1000; stroke-linecap:square; stroke:#1fafb8; fill:url(#B-fill); animation:animB 1.5s linear forwards;}
+    #logo #uxerolles path,
+    #logo #uxerolles rect {stroke-dasharray:300; stroke-dashoffset:300; stroke-linecap:square; stroke:#5d5d5d; fill:transparent; animation:animUxerolles 2.5s 3.5s linear forwards;}
+    #logo #S path,
+    #logo #LL .l-rouge {stroke-linecap:square; stroke:url(#LS-fill); fill:url(#LS-fill); animation:animLS 2s 6.5s linear forwards;}
+    #logo #LL .l-jaune {stroke-linecap:square; stroke:url(#L-fill); fill:url(#L-fill); animation:animL 2s 6.5s linear forwards;}
+
+    #logo #ville path {stroke-dasharray:120; stroke-dashoffset:120; stroke-linecap:square; stroke:#5d5d5d; fill:transparent; animation:animVille 2s 8s linear forwards;}
+
+   
+
+ 

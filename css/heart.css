@@ -3,39 +3,30 @@
   flex-wrap: wrap;
   justify-content: center;
 }
- .icone_heart_1, .icone_heart_2{
+ .icone_heart_1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     margin: 25px;
     padding:25px;
-    width:25px;
-    height: 25px;
+    width:300px;
+    height:300px;
 } 
-
-
- .icone_heart_2{
-  /*blanc*/
-  position:absolute;
-  z-index: 1;
-} 
- .icone_heart_1{
-  /*lila gradient*/
-  position:absolute;
-  z-index: 0; 
-opacity:0
- }  
-.icone_heart_2:hover  {
-cursor:pointer; 
-opacity:0;
-  }
- .icone_heart_2:hover + .icone_heart_1 {
+ .icone_heart_1:hover{
     animation: remp-color 0.1s ease forwards;
  } 
  @keyframes remp-color {
-  from { transform:scale(0);
-    opacity: 0;
-  transform-origin: right;}
-  to {transform:scale(1);
-    opacity: 1;}
+  from {
+    stroke:black;
+    fill:white;
  }
+ to{
+  stroke:none;
+fill:url(#MGradient);
+ }
+}
+    .icone_heart_1 svg:hover{
+      cursor:pointer;
+      animation: remp-color 0.3s ease forwards;
+    }
