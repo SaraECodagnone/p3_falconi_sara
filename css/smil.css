@@ -1,0 +1,32 @@
+   /* Animations */
+   * {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+  /*  Animations remplissage du coeur je t'aime sonrie*/
+  .liked{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   margin:10px;   
+   width: 90px;
+   height: 90px;
+   margin:50%; 
+  }
+  .icone_heart_1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   margin:10px;  
+   fill:white;
+   stroke-width: 5px;
+   stroke:black;
+  }
+  .icone_heart_1 svg{
+  
+  width: 80px;
+  height: 80px;
+  }
+    .icone_heart_1 svg {display:block; overflow:visible;}
+    .icone_heart_1 svg :hover{
+      cursor:pointer;
+    }
+      .liked:hover >.icone_heart_1 #S path {fill:url(#gradientcolor)}  ; 
+     /**/

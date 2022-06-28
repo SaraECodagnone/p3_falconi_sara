@@ -1,0 +1,5 @@
+* {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+  /*  Animations remplissage du coeur*/
+    .icone_heart_1 svg {display:block; overflow:visible;}
+      .icone_heart_1 #S path {fill:url(#grad1);}  
+  /**/
