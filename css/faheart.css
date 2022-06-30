@@ -1,14 +1,6 @@
    /* Animations */
 * {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
   /*  Animations remplissage du coeur*/
- @keyframes anim {
-  from{
-  opacity:1;}
-  to{
-    opacity:0;
-  }
-  }
-  
   body{
     display:flex;
     justify-content: center;
@@ -21,36 +13,15 @@
     width: 100%;
     height: auto;
   }
-  .icone_heart{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width:80px;
-    height:80px;
-   margin:10px;  
-   fill:white;
-   stroke-width: 5px;
-   stroke:black;
-   opacity:1;
-   position:absolute;
-   z-index: 0;
+  svg{
+    overflow:visible;
   }
   .icone_heart_1{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
    margin:10px;  
-   opacity:0;
-   position:absolute;
-   z-index:-1;
-  }
-  .icone_heart_1 path{
-    fill:url(#grad1);
-  }
-  .icone_heart:hover{
-    cursor:pointer;
-    opacity:0;
-  }
- .icone_heart:hover+.icone_heart_1{
-  opacity:1;
- }
+    }
+.icone_heart_1:hover{
+  cursor:pointer;
+}

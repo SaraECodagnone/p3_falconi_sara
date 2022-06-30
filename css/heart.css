@@ -13,29 +13,8 @@
     padding:25px;
     width:500px;
     height:500px;
+    overflow:visible;
 } 
-
-.ancre_heart .heart_1 svg path:focus {
-  fill:url(#gradientcolor)  ; 
-   }
-    .ancre_heart .heart_1 svg path:hover {
-  cursor:pointer  ; 
-   }
-.ancre_heart .heart_1 svg path:active {
-fill:url(#gradientcolor)  ; 
- }
-
-
-svg path{
-  stroke-dashoffset:3000 ;
-  stroke-dasharray:3000 ;
-  animation: draw 1s forwards ;
-}
-@keyframes draw {
-to{  stroke-dashoffset:0;
-}
-}
-a{
-  text-decoration:none;
-  text-decoration-style:none ;
-}
+ /* .heart_1 svg path{
+fill:black ; 
+ } */

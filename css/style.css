@@ -218,6 +218,7 @@ padding: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	flex-direction: column;
 	width: 40%;
 	position: relative;
 z-index: 0;
@@ -239,7 +240,18 @@ margin: 10px;
 	border-top-right-radius: 20px;
 	padding: 2px;
 }
-
+.nouveau1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 60px;
+	color: green;
+	background-color: #99E2D0;
+	position: relative;
+	z-index: 1;
+	bottom: 180px;
+	left: 260px;
+}
 .desc__restaurants{
 		display: flex;
 		flex-wrap: wrap;
@@ -259,39 +271,38 @@ margin: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	width: 300px;
+	width: 340px;
 	height: 20px;
 	font-weight: bold;
 	font-size: 18px;
 	}
-
-	.icone__heart__border{
-	display: flex;
-	flex-wrap: wrap;
+	.sec_desc_plus_heart{
+		display: flex;
+		flex-wrap: wrap;
 		align-content: center;
-	}
-
-		.icone__heart__border:hover{
-			cursor: pointer;
+		width: 340px;
+		height: 20px;
 	}
 .seconde__desc{
 	display: flex;
 	flex-wrap: wrap;
-	width: 340px;
+	width: 300px;
 	height: 20px;
 }
-.nouveau1{
-	display: flex;
+
+svg {
+	overflow:visible;
+  }
+  .icone_heart_1{
+	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 60px;
-	color: green;
-	background-color: #99E2D0;
-	position: relative;
-	z-index: 1;
-	bottom: 180px;
-	left: 260px;
+   margin:1px;  
+	}
+.icone_heart_1:hover{
+  cursor:pointer;
 }
+
 .nouveau2{
 	display: flex;
 	flex-wrap: wrap;
