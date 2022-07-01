@@ -28,6 +28,12 @@ svg{
     right: 0;
     z-index:-1;
 }
+.heart-main{
+    position:absolute;
+    left:0;
+    right: 0;
+    z-index:-0;
+}
 .heart-main:hover path{
     animation:stroke-animation 2s ease-in-out forwards;
 }
@@ -43,17 +49,9 @@ svg{
 }
 60%{
     stroke-dashoffset:3100;
-    fill:transparent;
-    transform:scale(1);
+ 
 }
-80%{
-    fill:#ff2581;
-    transform:scale(1.2);
-}
-90%{
-    fill:#ff2581;
-    transform:scale(1);
-}
+
 100%{
     stroke-dashoffset:3100;
 }
@@ -67,17 +65,9 @@ svg{
     }
     60%{
         stroke-dashoffset:3100;
-        fill:transparent;
-        transform:scale(1);
+     
     }
-    80%{
-        fill:#ff2581;
-        transform:scale(1.1);
-    }
-    90%{
-        fill:#ff2581;
-        transform:scale(1);
-    }
+ 
     100%{
         stroke-dashoffset:3100;
     }
@@ -96,7 +86,7 @@ opacity:1;
 opacity:1;
 }
 100%{
-transform:scale(2.5);
+transform:scale(2.1);
 opacity:0;
 }
 }

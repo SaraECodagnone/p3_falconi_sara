@@ -1,0 +1,51 @@
+    body{
+        display:flex;
+        justify-content: center;
+        align-content: center;
+        width:100%;
+        height: auto;
+      }
+    .loading-spinner{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin:18%;
+      width:100%;
+      height: auto;
+    }
+    .loader {
+     
+        margin:2px;
+        border:16px solid #FF79DA;
+        border-radius: 50%;
+      border-top: 16px solid #9356DC;
+      border-right: 16px solid #F2F2F2;
+      border-bottom: 16px solid #99E2D0;
+      border-left: 16px solid #FF79DA;
+      width: 80px;
+      height: 80px;
+      -moz-animation: spin 2s linear infinite forwards;
+      -webkit-animation: spin 2s linear infinite forwards; 
+      animation: spin 2s linear infinite forwards;
+    }
+    
+    /*Pour tous les navigateurs */
+    @-webkit-keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @-webkit-keyframes vis {
+      0% {opacity:1 ; }
+      100% {opacity:0; }
+    }
+    
+    @keyframes vis {
+      0% { opacity:1; }
+      100% { opacity:0; }
+    }
+    

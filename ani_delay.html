@@ -1,60 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr"></html>
 <head>
+
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<style>
- .loading-spinner{
-   display:flex;
-justify-content: center;
-    }
-  .loading-spinner:active{
-  opacity:0;
-}
-.loading-spinner:active > .loader{
-  opacity:0;
-}
-.loader {
-    margin:300px;
-    border:16px solid #FF79DA;
-    border-radius: 50%;
-  border-top: 16px solid #9356DC;
-  border-right: 16px solid #F2F2F2;
-  border-bottom: 16px solid #99E2D0;
-  border-left: 16px solid #FF79DA;
-  width: 80px;
-  height: 80px;
-  -moz-animation: spin 2s linear infinite forwards;
-  -webkit-animation: spin 2s linear infinite forwards; 
-  animation: spin 2s linear infinite forwards;
-}
-
-/*Pour tous les navigateurs */
-@-webkit-keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@-webkit-keyframes vis {
-  0% {opacity:1 ; }
-  100% {opacity:0; }
-}
-
-@keyframes vis {
-  0% { opacity:1; }
-  100% { opacity:0; }
-}
-
-</style>
+  <link rel="stylesheet" href="css/loading-spinner.css">
+  <title>Loading-spinner</title>
 </head>
 <body>
     <div class="loading-spinner">
+      <a href="index.html" title="Oh my food">
       <div class="loader"></div>
-<!-- <div class="refresh"><i class="material-icons">refresh</i></div> -->
+      </a>
 </div>
 </body>
 </html>

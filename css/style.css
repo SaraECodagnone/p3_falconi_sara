@@ -20,30 +20,6 @@
  }
 
  
- .loading_spinner{
-    display:flex;
-  justify-content: center;
-  width: 100%;
-  height: max-content;
-  background-color:#F2F2F2;
-   position:absolute;
-  z-index: 0;
-  -moz-animation: spin 2s steps(3) forwards;
-  -webkit-animation: spin 2s steps(3) forwards; 
-  animation: spin 2s steps(3) forwards;
-     }
-  .loader {
-     margin:300px;
-     border:16px solid #FF79DA;
-     border-radius: 50%;
-   border-top: 16px solid #9356DC;
-   border-right: 16px solid #F2F2F2;
-   border-bottom: 16px solid #99E2D0;
-   border-left: 16px solid #FF79DA;
-   width: 80px;
-   height: 80px;
-  
-  }
  
 
  	.oh__my__food__page {
@@ -72,8 +48,7 @@
  		align-items: center;
  		width: 100%;
  	 	margin: 10px 10px 10px 10px;
- 	 	background-color: #F2F2F2;
- 	}
+  	}
  	#logo__oh__my__food {
  		display: flex;
  		flex-wrap: wrap;
@@ -88,17 +63,42 @@ justify-content: center;
  		flex-wrap: wrap;
  		justify-content: center;
  		align-items: center;
- background-color: gray;
+ background-color: #e6e1e1;
  	width: 100%;
+	height: auto;
  	}
-
- 	.icone__localisation {
- 		color: black;
- 		padding: 10px;
+	 .localisation_plus_titre_ville{
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 310px;
+		height: 40px;
+	}
+ 	.icone__localisation svg {
+		display:flex;
+width: 20px;
+height: 20px;
+ 		fill: black;
+		margin:2px;
+ 		padding: 2px;
   	}
-#loc{
- 		color: black;
- 	}
+.titre_ville{
+	display:flex;
+	flex-wrap: wrap;
+	width: 240px;
+	height: auto;
+}
+.desc__oh__my__food__plus__bouton{
+	flex-direction: column;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height: auto;
+	background-color: #F2F2F2;
+}
 	 .desc__oh__my__food{
 		 display:flex;
 		 flex-wrap: wrap;
@@ -111,6 +111,9 @@ justify-content: center;
 	width: 280px;
 	height: 80px;
 	border: none;
+	color:white;
+	font-weight:bold;
+	font-size: 16px;
 	background: radial-gradient(circle at top left,
         #FF79DA,#9356DC);
 	border-radius: 40px;
@@ -175,13 +178,26 @@ justify-content: center;
 		margin: 10px;
 		padding: 10px;
 	}
+	#icone_iphone{
+		width:20px;
+		height: 20px;
+		fill:black;
+	}
+	#icone_list{
+		width:20px;
+		height: 20px;
+		fill:black;
+	}
+	#icone_store{
+		width:20px;
+		height: 20px;
+		fill:#9356DC;
+	}
 	.desc__fcnt{
 		display: flex;
 		flex-wrap: wrap;
 		margin: 10px;
 		padding: 10px;
-
-
 	}
 
 .c__restaurants h2{
@@ -220,8 +236,6 @@ padding: 10px;
 	justify-content: space-around;
 	flex-direction: column;
 	width: 40%;
-	position: relative;
-z-index: 0;
 }
 
 .image__restaurant{
@@ -230,6 +244,9 @@ flex-wrap: wrap;
 width: 340px;
 height: 200px;
 margin: 10px;
+/* position: absolute;
+	z-index: 0;
+	top: 0;left:0; */
 		}
 
 .image__restaurant img{
@@ -247,17 +264,17 @@ margin: 10px;
 	width: 60px;
 	color: green;
 	background-color: #99E2D0;
-	position: relative;
+	/* position: relative;
 	z-index: 1;
 	bottom: 180px;
-	left: 260px;
+	left: 260px; */
 }
 .desc__restaurants{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		width: 340px;
-		margin: 10px;
+		width: 310px;
+		margin: 2px;
 			}
 
 .premier__desc{
@@ -265,13 +282,14 @@ margin: 10px;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
-	height: 20px;
+	height: auto;
+	margin:2px;
 	}
 	.desc__titre{
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	width: 340px;
+	width: 310px;
 	height: 20px;
 	font-weight: bold;
 	font-size: 18px;
@@ -279,27 +297,31 @@ margin: 10px;
 	.sec_desc_plus_heart{
 		display: flex;
 		flex-wrap: wrap;
-		align-content: center;
-		width: 340px;
+		justify-content: center;
+		align-items: center;
+		width: 310px;
 		height: 20px;
+		margin:4px;
+		padding:1px;
 	}
 .seconde__desc{
 	display: flex;
 	flex-wrap: wrap;
-	width: 300px;
-	height: 20px;
+	width: 270px;
+	height: auto;
+	margin:1px;
 }
 
 svg {
 	overflow:visible;
   }
-  .icone_heart_1{
+  .icone_hearts,.icone_hearts_1,.icone_hearts_2,.icone_hearts_3{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
    margin:1px;  
 	}
-.icone_heart_1:hover{
+.icone_hearts,.icone_hearts_1,.icone_hearts_2,.icone_hearts_3:hover{
   cursor:pointer;
 }
 
@@ -310,10 +332,10 @@ svg {
 	width: 60px;
 	color: green;
 	background-color: #99E2D0;
-	position: relative;
+	/* position: relative;
 	z-index: 1;
 	bottom: 180px;
-	left: 260px;
+	left: 260px; */
 }
 .nouveau3{
 	opacity: 1;
@@ -323,10 +345,10 @@ svg {
 	width: 60px;
 	color: green;
 	background-color: #99E2D0;
-	position: relative;
+	/* position: relative;
 	z-index: 1;
 	bottom: 180px;
-	left: 260px;
+	left: 260px; */
 }
 .nouveau4{
 	opacity: 1;
@@ -336,10 +358,10 @@ svg {
 	width: 60px;
 	color: green;
 	background-color: #99E2D0;
-	position: relative;
+	/* position: relative;
 	z-index: 1;
 	bottom: 180px;
-	left: 260px;
+	left: 260px; */
 }
 
  	/**/

@@ -72,10 +72,21 @@ justify-content: center;
 	justify-content: center;
 	width: 100%;
 	}
-	.card_restaurants{
+	.menu__principale{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
+		width: 100%;
+		background-color:$color_grey;
+		padding: 10px;
+	}
+	.card_restaurants{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		background-color:$color_grey ;
         width: 60%;
 		border-radius: 20px;
@@ -102,28 +113,32 @@ z-index: 1;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	width: 310px;
+	height: auto;
 	background-color:$color_grey;
 	border-top-left-radius: 80px;
 	border-top-right-radius: 80px;
-	position: relative;
-	z-index: 2;
-	bottom: 68px;
-	padding: 20px;
+	// position: relative;
+	// z-index: 2;
+	// bottom: 68px;
+	// padding: 20px;
 }
-.desc_restaurants h1{
+.desc_restaurants h2{
 	font-family: Shrikhand;
 	font-style: italic;
 	font-size: 36px;
 }
-.menu__principale{
-	display: flex;
+svg {
+	overflow:visible;
+  }
+  .icone_hearts{
+	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-	width: 100%;
-	background-color:$color_grey;
-	padding: 10px;
+   margin:1px;  
+	}
+.icone_hearts:hover{
+  cursor:pointer;
 }
 .souligner {
 text-decoration: underline;

@@ -4,88 +4,92 @@
   <meta charset="utf-8" />
    <link rel="stylesheet" href="css/style.css" />
    <link rel="stylesheet" href="css/normalize.css" />
-   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"   >      
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
- <script src="https://kit.fontawesome.com/299d79793b.js"></script>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ohmyfood</title>
 </head>
 <body class="oh__my__food__page">
-  <!--Loading-spinner-->
-  <div class="loading-spinner">
-    <div class="loader"></div>
-</div><!--loading-spinner-->
   <header class="header__oh__my__food">
     <!-- <div class="titre_oh-my-food"> -->
     <div id="logo__oh__my__food">
       <img src="images/logo/oh-my-food.png" alt="oh my food" />
     </div>
      <div class="localisation">
-         <div class="icone__localisation">
-          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
-
-            <i class="material-icons" id="loc">place</i></a></div>
-        <div><p>Paris,Belleville <p></div>
-    </div>
+       <div class="localisation_plus_titre_ville">
+    <div class="icone__localisation">
+        <a href="#">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+  <path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+</a>
+</div>
+ <div class="titre_ville"><p><a href="#">Paris,Belleville </a><p></div>
+  </div>
+      </div>
+      <div class="desc__oh__my__food__plus__bouton">
         <div class="desc__oh__my__food">
         <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, </p>
-        <p>séléctionnés par nos soins.</p>
+        <p>Découvrez des restaurants d'exception, <br />
+        séléctionnés par nos soins.</p>
       </div>
           <button class="explorez">Explorez nos restaurants
       </button>
+      </div>
       </header>
       <main class="menu__principal">
-
 <section class="fonctionnement">
   <div class="titres__fonctionnement">
   <h2>Fonctionnement</h2></div>
  <div class="c__fonctionnement"> 
   <div class="optn">1</div>
   <div class="bouton__fcnt">
-  <div class="icone__fcnt"><i class="material-icons">phone_iphone</i></div>
+  <div class="icone__fcnt">
+    <svg  id="icone_iphone"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+      <path d="M304 0h-224c-35.35 0-64 28.65-64 64v384c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64V64C368 28.65 339.3 0 304 0zM192 480c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S209.8 480 192 480zM304 64v320h-224V64H304z"/></svg>
+</div>
   <div class="desc__fcnt">Choisissez un restaurant</div>
 </div>
 </div>
-
    <div class="c__fonctionnement">
     <div class="optn">2</div>
     <div class="bouton__fcnt">
-    <div class="icone__fcnt"><i class="material-icons">list</i></div>
+    <div class="icone__fcnt">
+      <svg id="icone_list" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path d="M16 96C16 69.49 37.49 48 64 48C90.51 48 112 69.49 112 96C112 122.5 90.51 144 64 144C37.49 144 16 122.5 16 96zM480 64C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96C160 78.33 174.3 64 192 64H480zM480 224C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H192C174.3 288 160 273.7 160 256C160 238.3 174.3 224 192 224H480zM480 384C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416C160 398.3 174.3 384 192 384H480zM16 416C16 389.5 37.49 368 64 368C90.51 368 112 389.5 112 416C112 442.5 90.51 464 64 464C37.49 464 16 442.5 16 416zM112 256C112 282.5 90.51 304 64 304C37.49 304 16 282.5 16 256C16 229.5 37.49 208 64 208C90.51 208 112 229.5 112 256z"/></svg>
+</div>
   <div class="desc__fcnt">Composez votre menu</div></div>
 </div>
-
  <div class="c__fonctionnement">
   <div class="optn">3</div>
   <div class="bouton__fcnt">
-  <div class="icone__fcnt"><i class="material-icons">store</i></div>
+  <div class="icone__fcnt">
+    <svg id="icone_store"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+      <path d="M495.5 223.2C491.6 223.7 487.6 224 483.4 224C457.4 224 434.2 212.6 418.3 195C402.4 212.6 379.2 224 353.1 224C327 224 303.8 212.6 287.9 195C272 212.6 248.9 224 222.7 224C196.7 224 173.5 212.6 157.6 195C141.7 212.6 118.5 224 92.36 224C88.3 224 84.21 223.7 80.24 223.2C24.92 215.8-1.255 150.6 28.33 103.8L85.66 13.13C90.76 4.979 99.87 0 109.6 0H466.4C476.1 0 485.2 4.978 490.3 13.13L547.6 103.8C577.3 150.7 551 215.8 495.5 223.2H495.5zM499.7 254.9C503.1 254.4 508 253.6 512 252.6V448C512 483.3 483.3 512 448 512H128C92.66 512 64 483.3 64 448V252.6C67.87 253.6 71.86 254.4 75.97 254.9L76.09 254.9C81.35 255.6 86.83 256 92.36 256C104.8 256 116.8 254.1 128 250.6V384H448V250.7C459.2 254.1 471.1 256 483.4 256C489 256 494.4 255.6 499.7 254.9L499.7 254.9z"/></svg></div>
   <div class="desc__fcnt">Dégustez au restaurant</div></div>
 </div>
 </section>
+
      <section class="c__restaurants">
  <h2>Restaurants</h2>
 <!-- Cadres Restaurants-->
-
 <div class="cad__restaurants">
 <div class="restaurants">
- <a href="lapalettedugout.html">
+ <a href="lapalettedugout.html" title="La Palette du Goût" target="_blank">
 <div class="image__restaurant">
 <img src="images/restaurants/lapalettedugout.jpg" alt="La Palette du goût"></div>
 <div class="nouveau1">Nouveau</div> 
+ </a>  
 <div class="desc__restaurants">
   <div class="premier__desc">
-  <div class="desc__titre"><p>La palette du goût</p></div>
+  <div class="desc__titre"><p><a href="lapalettedugout.html">La palette du goût</p></a></div>
 </div>
-</div>
- </a>  
+
+
  <div class="sec_desc_plus_heart">
        <div class="seconde__desc"><p>Ménilmontant</p> </div>
-     <div class="icone_heart_1">
-      <svg class="svg_heart_1"  width="26px" height="26px"  fill="white" stroke="black"  stroke-width="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  ><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+     <div class="icone_hearts">
+      <svg class="svg_hearts"  width="26px" height="26px"  fill="white" stroke="black"  stroke-width="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  ><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
         <animate  xlink:href="#hearts" id="startc" attributeName="stroke-width"  values="8;0"  dur="0.3s"  begin="click" fill="freeze"/>   
         <defs>     
-    <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="100%">
+    <linearGradient id="grad" x1="0" y1="0" x2="0" y2="100%">
       <stop offset="0%" style="stop-color:#9356DC;stop-opacity:1" />
                  <stop offset="0%%" style="stop-opacity:0; stop-color:#FF79DA">
     <animate id="startB" attributeName="offset" values="0;1" repeatCount="1" dur="3s" begin="startc.begin" fill="freeze"/>
@@ -98,56 +102,130 @@
     </linearGradient>
   </defs>     
   <g id="s">
-  <path id="hearts" fill="url(#grad1)" d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"  />
+  <path id="hearts" fill="url(#grad)" d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"  />
 </g> 
          </svg>
       </div>
       <!--anim coeur-->
+      </div>
 </div> 
-  </div>
-<div class="restaurants">
- <a href="lanoteenchantee.html">
-<div class="image__restaurant"><img src="images/restaurants/lanoteenchantee.jpg" alt="La Note Enchantee"></div>
-<div class="nouveau2">Nouveau</div> 
-<div class="desc__restaurants">
-  <div class="premier__desc">
-  <div class="desc__titre"><p>La Note Enchantée</p></div>
-    <div class="icone__heart__border"><i class="material-icons">favorite_border</i></div>
-</div>
-  <div class="seconde__desc"><p>Charonne</p></div>
-</div> 
-   </a> 
-</div>
-
-<div class="restaurants">
- <a href="alafrancaise.html">
-<div class="image__restaurant"><img src="images/restaurants/alafrancaise.jpg" alt="A la Francaise"></div>
-<div class="nouveau3">Nouveau</div> 
-<div class="desc__restaurants">
-  <div class="premier__desc">
-  <div class="desc__titre"><p>A la Fraçaise</p></div>
-    <div class="icone__heart__border"><i class="material-icons">favorite_border</i></div>
- </div>
-  <div class="seconde__desc"><p>Cité Rouge</p></div>
-</div> 
-   </a> 
 </div>
 <div class="restaurants">
- <a href="ledelicedessens.html">
+ <a href="lanoteenchantee.html" title="La Note Enchantée" target="_blank">
 <div class="image__restaurant">
-<img src="images/restaurants/ledelicedessens.jpg" alt="Le Délice des sens"></div>
-  <div class="nouveau4">Nouveau</div> 
+  <img src="images/restaurants/lanoteenchantee.jpg" alt="La Note Enchantee"></div>
+<div class="nouveau2">Nouveau</div>  
+  </a>  
 <div class="desc__restaurants">
   <div class="premier__desc">
-  <div class="desc__titre"><p>Le délice des sens</p></div>
-
-  <div class="icone__heart__border"><i class="material-icons">favorite_border</i></div>
+  <div class="desc__titre"><p><a href="#">La Note Enchantée</a></p></div>
 </div>
+
+ <div class="sec_desc_plus_heart">
+  <div class="seconde__desc"><p>Charonne</p></div>
+      <div class="icone_hearts_1">
+      <svg class="svg_hearts_1"  width="26px" height="26px"  fill="white" stroke="black"  stroke-width="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  ><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <animate  xlink:href="#hearts_1" id="startc1" attributeName="stroke-width"  values="8;0"  dur="0.3s"  begin="click" fill="freeze"/>   
+        <defs>     
+    <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset="0%" style="stop-color:#9356DC;stop-opacity:1" />
+                 <stop offset="0%%" style="stop-opacity:0; stop-color:#FF79DA">
+    <animate id="startB1" attributeName="offset" values="0;1" repeatCount="1" dur="3s" begin="startc1.begin" fill="freeze"/>
+    <animate attributeName="stop-opacity" values="0;1" repeatCount="1" dur="1.5s" begin="startB1.begin" fill="freeze"/> 
+             </stop>
+             <stop offset="99%" style="stop-opacity:0;stop-color:#9356DC">
+    <animate attributeName="offset" values="1" repeatCount="1" dur="1.5s" begin="1s" fill="freeze"/> 
+                 </stop>
+      <stop offset="100%" style="stop-color:#FF79DA;stop-opacity:1" />
+    </linearGradient>
+  </defs>     
+  <g id="s">
+  <path id="hearts_1" fill="url(#grad1)" d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"  />
+</g> 
+         </svg>
+      </div>
+      <!--anim coeur-->
+ </div> 
+ </div>
+ </div>
+<div class="restaurants"> 
+   <a href="alafrancaise.html">
+<div class="image__restaurant">
+ 
+  <img src="images/restaurants/alafrancaise.jpg" alt="A la Francaise"></div>
+<div class="nouveau3">Nouveau</div> 
+ </a>
+<div class="desc__restaurants">
+  <div class="premier__desc">
+  <div class="desc__titre"><p><a href="#">A la Fraçaise</p></a></div>
+</div>
+ <div class="sec_desc_plus_heart">
+  <div class="seconde__desc"><p>Cité Rouge</p></div>
+       <div class="icone_hearts_2">
+      <svg class="svg_hearts_2"  width="26px" height="26px"  fill="white" stroke="black"  stroke-width="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  ><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <animate  xlink:href="#hearts_2" id="startc2" attributeName="stroke-width"  values="8;0"  dur="0.3s"  begin="click" fill="freeze"/>   
+        <defs>     
+    <linearGradient id="grad2" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset="0%" style="stop-color:#9356DC;stop-opacity:1" />
+                 <stop offset="0%%" style="stop-opacity:0; stop-color:#FF79DA">
+    <animate id="startB2" attributeName="offset" values="0;1" repeatCount="1" dur="3s" begin="startc2.begin" fill="freeze"/>
+    <animate attributeName="stop-opacity" values="0;1" repeatCount="1" dur="1.5s" begin="startB2.begin" fill="freeze"/> 
+             </stop>
+             <stop offset="99%" style="stop-opacity:0;stop-color:#9356DC">
+    <animate attributeName="offset" values="1" repeatCount="1" dur="1.5s" begin="1s" fill="freeze"/> 
+                 </stop>
+      <stop offset="100%" style="stop-color:#FF79DA;stop-opacity:1" />
+    </linearGradient>
+  </defs>     
+  <g id="s">
+  <path id="hearts_2" fill="url(#grad2)" d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"  />
+</g> 
+         </svg>
+      </div>
+      <!--anim coeur-->
+ </div> 
+ </div>
+</div>
+<div class="restaurants">
+   <a href="ledelicedessens.html">
+<div class="image__restaurant">
+
+<img src="images/restaurants/ledelicedessens.jpg" alt="Le Délice des sens"></div>
+  <div class="nouveau4">Nouveau</div>
+  </a> 
+<div class="desc__restaurants">
+  <div class="premier__desc">
+  <div class="desc__titre"><p><a href="#">Le délice des sens</a></p></div>
+</div>
+
+ 
+ <div class="sec_desc_plus_heart">
   <div class="seconde__desc"><p>Folie-Méricourt</p></div>
-</div> 
-   </a> 
+      <div class="icone_hearts_3">
+      <svg class="svg_hearts_3"  width="26px" height="26px"  fill="white" stroke="black"  stroke-width="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  ><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <animate  xlink:href="#hearts_3" id="startc3" attributeName="stroke-width"  values="8;0"  dur="0.3s"  begin="click" fill="freeze"/>   
+        <defs>     
+    <linearGradient id="grad3" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset="0%" style="stop-color:#9356DC;stop-opacity:1" />
+                 <stop offset="0%%" style="stop-opacity:0; stop-color:#FF79DA">
+    <animate id="startB3" attributeName="offset" values="0;1" repeatCount="1" dur="3s" begin="startc3.begin" fill="freeze"/>
+    <animate attributeName="stop-opacity" values="0;1" repeatCount="1" dur="1.5s" begin="startB3.begin" fill="freeze"/> 
+             </stop>
+             <stop offset="99%" style="stop-opacity:0;stop-color:#9356DC">
+    <animate attributeName="offset" values="1" repeatCount="1" dur="1.5s" begin="1s" fill="freeze"/> 
+                 </stop>
+      <stop offset="100%" style="stop-color:#FF79DA;stop-opacity:1" />
+    </linearGradient>
+  </defs>     
+  <g id="s">
+  <path id="hearts_3" fill="url(#grad3)" d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"  />
+</g> 
+         </svg>
+      </div>
+      <!--anim coeur-->
+ </div> 
+ </div>
 </div>
-
 </div><!--div cad restaurants-->
 </section> <!--class=c__restaurants"-->
   </main>
@@ -155,8 +233,8 @@
      <h3>Oh my food</h3>
         <div class="container__footer">
           <div class="footer__restaurant" >
-          <a href="#">
-            <div class="restaurant" >
+          <a href="#ref__restaurant">
+            <div id="ref__restaurant" class="restaurant" >
           <div class="icone__restaurant"> 
             <svg width="18" height="18"  fill="white"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M221.6 148.7C224.7 161.3 224.8 174.5 222.1 187.2C219.3 199.1 213.6 211.9 205.6 222.1C191.1 238.6 173 249.1 151.1 254.1V472C151.1 482.6 147.8 492.8 140.3 500.3C132.8 507.8 122.6 512 111.1 512C101.4 512 91.22 507.8 83.71 500.3C76.21 492.8 71.1 482.6 71.1 472V254.1C50.96 250.1 31.96 238.9 18.3 222.4C10.19 212.2 4.529 200.3 1.755 187.5C-1.019 174.7-.8315 161.5 2.303 148.8L32.51 12.45C33.36 8.598 35.61 5.197 38.82 2.9C42.02 .602 45.97-.4297 49.89 .0026C53.82 .4302 57.46 2.303 60.1 5.259C62.74 8.214 64.18 12.04 64.16 16V160H81.53L98.62 11.91C99.02 8.635 100.6 5.621 103.1 3.434C105.5 1.248 108.7 .0401 111.1 .0401C115.3 .0401 118.5 1.248 120.9 3.434C123.4 5.621 124.1 8.635 125.4 11.91L142.5 160H159.1V16C159.1 12.07 161.4 8.268 163.1 5.317C166.6 2.366 170.2 .474 174.1 .0026C178-.4262 181.1 .619 185.2 2.936C188.4 5.253 190.6 8.677 191.5 12.55L221.6 148.7zM448 472C448 482.6 443.8 492.8 436.3 500.3C428.8 507.8 418.6 512 408 512C397.4 512 387.2 507.8 379.7 500.3C372.2 492.8 368 482.6 368 472V352H351.2C342.8 352 334.4 350.3 326.6 347.1C318.9 343.8 311.8 339.1 305.8 333.1C299.9 327.1 295.2 320 291.1 312.2C288.8 304.4 287.2 296 287.2 287.6L287.1 173.8C288 136.9 299.1 100.8 319.8 70.28C340.5 39.71 369.8 16.05 404.1 2.339C408.1 .401 414.2-.3202 419.4 .2391C424.6 .7982 429.6 2.62 433.9 5.546C438.2 8.472 441.8 12.41 444.2 17.03C446.7 21.64 447.1 26.78 448 32V472z"/></svg>
             </div>
@@ -165,8 +243,8 @@
        </a>
      </div>
      <div class="footer__handshake">
-       <a href="#">
-        <div class="handshake">
+       <a href="#ref__handshake">
+        <div  id="ref__handshake" class="handshake">
     <div class="icone__handshake"> 
   <svg  width="18" height="18"  fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M488 191.1h-152l.0001 51.86c.0001 37.66-27.08 72-64.55 75.77c-43.09 4.333-79.45-29.42-79.45-71.63V126.4l-24.51 14.73C123.2 167.8 96.04 215.7 96.04 267.5L16.04 313.8c-15.25 8.751-20.63 28.38-11.75 43.63l80 138.6c8.875 15.25 28.5 20.5 43.75 11.75l103.4-59.75h136.6c35.25 0 64-28.75 64-64c26.51 0 48-21.49 48-48V288h8c13.25 0 24-10.75 24-24l.0001-48C512 202.7 501.3 191.1 488 191.1zM635.7 154.5l-79.95-138.6c-8.875-15.25-28.5-20.5-43.75-11.75l-103.4 59.75h-62.57c-37.85 0-74.93 10.61-107.1 30.63C229.7 100.4 224 110.6 224 121.6l-.0004 126.4c0 22.13 17.88 40 40 40c22.13 0 40-17.88 40-40V159.1h184c30.93 0 56 25.07 56 56v28.5l80-46.25C639.3 189.4 644.5 169.8 635.7 154.5z"/></svg>
 </div>
@@ -175,8 +253,8 @@
         </a>
       </div>
         <div class="footer__mentions__legales">
-        <a href="#">
-          <div class="mentions__legales">
+        <a href="#ref__legal">
+          <div id="ref__legal" class="mentions__legales">
           <div class="icone__mentions__legales"></div>
           <div class="desc__mentions__legales"><p>Mentions légales</p></div>
         </div>
