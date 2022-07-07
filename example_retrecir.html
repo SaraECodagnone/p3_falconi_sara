@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            .div1{
+                width:100%;
+                height: auto;
+                background-color: red;}
+                .div1:active{
+                animation: move 5s ;
+                animation-fill-mode: forwards;
+                -webkit-animation-fill-mode: forwards;
+            }
+            .div2{
+                width:90%;
+                height: 90px;
+                background-color: blue;
+            }
+            @keyframes move {
+                from{ width:100%;}
+                to{ width:80%;}
+                
+            }
+            @-webkit-keyframes move{
+                from{ width:100%;}
+                to{ width:80%;}
+            }
+            </style>
+            </head>
+            <body>
+                <div class="div1">Merci
+                    <div class="div2">Hello</div>
+                </div>
+            </body>
+</html>
