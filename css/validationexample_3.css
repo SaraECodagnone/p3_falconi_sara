@@ -1,11 +1,19 @@
-*
-{margin:0;
+*{
+  margin:0;
   padding:0;  
    box-sizing:border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
   }
 h3{
-    margin:1px;
+     margin:1px;
     padding:1px; 
+    width:100%;
+}
+.titre_h3{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
 }
 body{
     display:flex;
@@ -13,54 +21,75 @@ body{
 .div_card{
    display:flex;
   flex-wrap:nowrap;
-  justify-content: space-between;
-   align-items:center; 
+   justify-content: center;
+   align-items:center;  
      width: 310px;
      height:95px;
-     border:1px solid #616161;
-     margin:0;
+     border: 2px solid #F2F2F2;
+     background-color: #F2F2F2;
+       margin:2px;
         border-radius:15px;
-         position:relative;
+         position:absolute;
       z-index:0;
       overflow: hidden;
 }
-.titres{
+.plats{
   display:flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   width:310px;
-} 
-#text{
-        width:160px;
-     transition:width ease 2s;
+  margin:1px;
+ } 
+.desc_plats{
+  display:flex;
+  width:240px;
+  margin:1px;
+  padding:3px;
+ }
+.desc_plats p{
+  text-overflow:ellipsis;
+   overflow:hidden;
+   white-space:nowrap;   
+   margin:1px;
+   padding:3px;  
 }
-#price{
+.price{
+  display:flex;
+  flex-wrap: wrap;
+  margin:3px;
+  padding:2px;
+}
+.price p{
  width:40px; 
   text-align:right;
-  transition:width ease 2s;
 }
 .div_validation{
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
-   position:relative;
+   position:absolute;
   z-index:1; 
   top:0px;
   bottom:0px;
   right:0px;
-  left: -10px;  
+  left: 300px;  
   width:90px;
   height: 90px;
   opacity:0;
+  overflow:hidden;
+  margin:2px;
+  padding:3px ;
 }
 .div_square{
   display:flex;
   flex-wrap: wrap;
-  position:relative;
+  position:absolute;
   z-index:1; 
   top:0px;
   bottom:0px;
   right:0px;
-  left: 10px;  
+  left: 0px;  
      width: 90px; 
      height:90px;
            margin:0px;  
@@ -77,12 +106,12 @@ body{
 .div_circle{
   display:flex;
   flex-wrap: wrap;
-  position:relative;
+  position:absolute;
 z-index:2; 
-top:-65px;
+top:20px;
 bottom:0px;
 right:0px;
-left: 40px;  
+left: 20px;  
 color:#99E2D0;
   width:40px;
   height: 40px;
@@ -95,45 +124,49 @@ color:#99E2D0;
    height: 40px;
    margin:0px;
    border-radius: 40px;
- /* -webkit-animation: spin 2s linear 1 forwards; 
-   animation: spin 2s linear  1 forwards ;  */
  }
-.titres:hover  #text{
-    width:calc(210px - 90px);
-    text-overflow:ellipsis;
-    overflow:hidden;
-    white-space:nowrap;
+ .plats:hover{
+ cursor:pointer;
+}
+.plats:hover .desc_plats{
+   -webkit-animation: anim-text 2s ease forwards; 
+   animation: anim-text 2s ease forwards ;
 } 
-.titres:hover  #price{
-   width:calc(40px - 12px);   
+.plats:hover .price{
+  -webkit-animation: tran 2s ease forwards; 
+  animation: tran 2s ease forwards ;
 }
-.titres:hover + .div_validation {
-  -webkit-animation: traw 2s linear infinite forwards; 
-  animation: traw 2s linear  1 forwards ;
+.plats:hover + .div_validation {
+  -webkit-animation: tran 2s ease forwards; 
+  animation: tran 2s ease forwards ;
   opacity:1;
+}  
+.plats:hover + .div_validation >.div_circle{
+  -webkit-animation: spin 2s ease forwards; 
+  animation: spin 2s ease forwards ;
 }
-.titres:hover + .div_validation >.div_circle{
-  -webkit-animation: spin 2s linear 1 forwards; 
-  animation: spin 2s linear  1 forwards ;
-}
-
+/* Rot de 360 deg circle-check font awesome*/
 @-webkit-keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  /*Translate Width X*/
-  @-webkit-keyframes traw {
-    0% { transform: translateX(90px); }
-    100% { transform: translateX(0px); }
+  /*Translate Width Div validation sur l'axe X de 90px*/
+  @-webkit-keyframes tran {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(-90px); }
   }
-  
-  @keyframes traw {
-    0% { transform: translateX(90px); }
-    100% { transform: translateX(0px); }
+  @keyframes tran {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(-90px); }
   }
-  
+  /*Retrecir  Width du paragraph text de 260px a 190px*/
+  @-webkit-keyframes anim-text {
+    to{ width:190px;}
+    }
+  @keyframes anim-text {
+    to{width:190px;}
+     }  
