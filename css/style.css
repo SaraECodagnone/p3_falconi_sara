@@ -168,6 +168,7 @@ height: 20px;
 						}
 .c__fonctionnement:hover .bouton__fcnt{
      background-color: rgb(243,229,245);
+	 cursor:pointer;
  }
 
 	.bouton__fcnt{

@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 2rem;
+  background-color: #15DEA5;
+  position: relative;
+  z-index: 1;
+}
+.btn:hover .btn__bg {
+  opacity: 1;
+}
+.btn__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #13c794;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+/*# sourceMappingURL=main.css.map */

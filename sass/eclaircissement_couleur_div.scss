@@ -1,0 +1,57 @@
+$border-rad: 2rem;
+.btn {
+    border-radius: $border-rad;
+    background-color::radial-gradient(circle at top left,
+    rgba(147, 86, 220, 1),rgba(255, 121, 218, 1));
+    position: relative;
+    z-index: 1;
+    &:hover {
+        & .btn__bg {
+            opacity: 1;
+        }
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        // background: darken($clr-btn, 5);
+        background:radial-gradient(circle at top left,
+         lighten(rgba(147, 86, 220, 1), 5) 0%,
+      lighten(rgba(255, 121, 218, 1), 5) 100%);
+           opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+}
+// .btn {
+//     font-size: 64px;
+//     border: none;
+//     margin-bottom: 3rem;
+//     padding: 1rem 1rem;
+//     color: #fff;
+//     border-radius: 2rem;
+//     box-shadow: 0px 2px 10px 0px #7d7d7d;
+//     background: linear-gradient(
+//       356deg,
+//       rgba(155, 89, 220, 1) 0%,
+//             rgba(255, 121, 218, 1) 100%
+//     );
+//     &:hover {
+//       background: linear-gradient(
+//         356deg,
+//         lighten(rgba(155, 89, 220, 1), 5%) 0%,
+//         lighten(rgba(255, 121, 218, 1), 5%) 100%
+//       );
+//       box-shadow: 0px 2px 10px 0px #525252;
+//     }
+//   }
+  
+  
+//   body{
+//     height:100vh;
+//     display:flex;
+//     justify-content:center;
+//     align-items:center;
+//   }
