@@ -2,8 +2,8 @@
  {
  	box-sizing: border-box;
  	/* Opera/IE 8+ */
- /* -moz-box-sizing: border-box;  /*Firefox, autres Gecko */
-  /* -webkit-box-sizing: border-box; Safari/Chrome, autres WebKit */
+ -moz-box-sizing: border-box;  /*Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /*Safari/Chrome, autres WebKit */
  	font-family: 'Raleway', sans-serif,'Roboto','Shrikhand';
  	margin: 0;
  	padding: 0;
@@ -116,13 +116,13 @@ height: 20px;
 		justify-content: center;
 		width: 100%;
 	}
-	.su__titres__boutons{
+	.sous__titres__boutons{
 		display:flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		width:100%;
 	}
-	.su__titres__boutons p{
+	.sous__titres__boutons p{
 		text-align: center;
 	}
  .explorez{
@@ -166,8 +166,10 @@ height: 20px;
 		display: flex;
 		flex-wrap: wrap;
 						}
+.c__fonctionnement:hover .bouton__fcnt{
+     background-color: rgb(243,229,245);
+ }
 
-	
 	.bouton__fcnt{
 		display: flex;
 		flex-wrap: wrap;

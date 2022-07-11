@@ -10,17 +10,13 @@ h3{
     padding:1px; 
     width:100%;
 }
-.titre_h3{
-  display:flex;
-  flex-wrap: wrap;
-  width:100%;
-}
 body{
     display:flex;
 }
 .div_card{
    display:flex;
   flex-wrap:nowrap;
+  flex-direction: column;
    justify-content: center;
    align-items:center;  
      width: 310px;
@@ -32,6 +28,22 @@ body{
          position:absolute;
       z-index:0;
       overflow: hidden;
+}
+.titre_h3 {
+  display:flex;
+    width:310px;
+     margin:1px;
+  padding:3px; 
+
+}
+.titre_h3 p{
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space:nowrap;   
+  margin:1px;
+  padding:3px; 
+  font-size: 20px;
+  font-weight: bold;
 }
 .plats{
   display:flex;
@@ -128,6 +140,10 @@ color:#99E2D0;
  .plats:hover{
  cursor:pointer;
 }
+.plats:hover .titre_h3{
+  -webkit-animation: anim-text 2s ease forwards; 
+  animation: anim-text 2s ease forwards ;
+} 
 .plats:hover .desc_plats{
    -webkit-animation: anim-text 2s ease forwards; 
    animation: anim-text 2s ease forwards ;

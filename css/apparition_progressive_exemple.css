@@ -1,0 +1,49 @@
+.container{
+  
+     width:200px;
+     height:50px;
+     background:red;
+     color:#ffffff;
+     text-align:center;
+     padding:15px;
+     box-sizing:border-box;
+     border-radius:5px;
+     cursor:pointer;
+     animation-name:slideIn;
+     animation-duration:1s;
+     animation-timing-function:ease;
+     margin-top:40px;
+     animation-fill-mode: both;
+  
+}
+.plat2{
+     animation-delay:1s;
+  
+}
+.plat3{
+     animation-delay:2s;
+  
+}
+.plat4{
+     animation-delay:3s;
+  
+}
+
+@keyframes slideIn{
+  
+     from{
+       
+          opacity:0;
+           transform:translate3d(0, 30px, 0); 
+          
+     }
+     
+     to{
+       
+         opacity:1;
+         transform:translate3d(0,0,0); 
+         
+       
+     }
+  
+}
