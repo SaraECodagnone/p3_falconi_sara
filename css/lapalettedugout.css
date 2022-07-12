@@ -74,7 +74,7 @@ justify-content: center;
       justify-content: center;
       align-items: center;
       width: 100%;
-      background-color:#F2F2F2;
+      background-color:rgb(242, 242, 242);
       padding: 10px;
    }
    .card_restaurants{
@@ -83,7 +83,7 @@ justify-content: center;
        flex-direction: column;
        justify-content: center;
        align-items: center;
-       background-color:#F2F2F2 ;
+       background-color:rgb(242, 242, 242) ;
        width: 60%;
        border-radius: 20px;
    }
@@ -110,12 +110,12 @@ z-index: 1;
    justify-content: space-between;
    align-items: center;
       width: 310px;
-   background-color:#F2F2F2;
+   background-color:rgb(242, 242, 242);
    border-top-left-radius: 80px;
    border-top-right-radius: 80px;
 }
 .desc_restaurants h2{
-   font-family: Shrikhand;
+   font-family: "Shrikhand";
    font-style: italic;
    font-size: 36px;
 }
@@ -133,12 +133,12 @@ z-index: 1;
 }
 .souligner {
 text-decoration: underline;
-text-decoration-color:#99E2D0;
+text-decoration-color:rgb(153, 226, 208);
     }
 .section__entrees, .section__plats__principales, .section__desserts {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #F2F2F2;
+    border: 2px solid rgb(242, 242, 242);
 width: 30%;
 }
 
@@ -150,7 +150,7 @@ align-items: center;
    width: 310px;
    height: 95px;
    border-radius: 20px;
-   background-color: #FFFFFF;
+   background-color: rgb(255, 255, 255);
    margin: 2px;
 padding: 2px;
  position:relative;
@@ -310,14 +310,14 @@ padding:3px;
   bottom:0px;
   right:0px;
   left: 20px;  
-  color:#99E2D0;
+  color:rgb(153, 226, 208);
     width:40px;
     height: 40px;
     margin:0px;
     border-radius: 40px;
   }
   #svg_circleok{
-   color:#99E2D0;
+   color:rgb(153, 226, 208);
      width:40px;
      height: 40px;
      margin:0px;
@@ -355,9 +355,9 @@ padding:3px;
    height: auto;
 }
 .bouton__commander{
-    color:#FFFFFF;
-    background-color: #FF79DA;
-    border: 2px solid #FF79DA;
+    color:rgb(255, 255, 255);
+    background-color: rgb(255, 121, 218);
+    border: 2px solid rgb(255, 121, 218);
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
@@ -407,17 +407,17 @@ padding:3px;
 footer {
         display: flex;
         flex-wrap: wrap;
-        background-color:#000000 ;
+        background-color:rgb(0, 0, 0) ;
         padding: 10px;
         margin: 10px;
         width: 100%;
-   color: #FFFFFF;
+   color: rgb(255, 255, 255);
     }
     footer a {
-        color:#FFFFFF;
+        color:rgb(255, 255, 255);
     }
 footer p{
-   color:#FFFFFF;
+   color:rgb(255, 255, 255);
 }
 footer	h3 {
         font-weight: bold;
@@ -455,7 +455,7 @@ footer	h3 {
    width: 18px;
    height: 18px;
    margin-right: 10px;	
-   color:#FFFFFF;
+   color:rgb(255, 255, 255);
 }
 .desc__restaurant, .desc__handshake, .desc__mentions__legales, .desc__contact {
    display: flex;
@@ -475,13 +475,13 @@ footer	h3 {
    flex-wrap: wrap;
        justify-content: center;
    width: 100%;
-   background-color: #F2F2F2;
+   background-color: rgb(242, 242, 242);
    padding: 10px;
 }
 .section__entrees, .section__plats__principales, .section__desserts {
       display: flex;
    flex-wrap: wrap;
-   border: 2px solid #F2F2F2;
+   border: 2px solid rgb(242, 242, 242);
 width: 30%;
 }
         .container__footer{
@@ -504,13 +504,13 @@ width: 30%;
    flex-wrap: wrap;
    justify-content: center;
    width: 100%;
-   background-color: #F2F2F2;
+   background-color: rgb(242, 242, 242);
    padding: 10px;
 }
 .section__entrees, .section__plats__principales, .section__desserts {
       display: flex;
    flex-wrap: wrap;
-   border: 2px solid #f2f2f2;
+   border: 2px solid rgb(242, 242, 242);
 width: 50%;
 }
     .container__footer {
@@ -531,7 +531,7 @@ width: 50%;
    justify-content: center;
    align-items: center;
    width: 100%;
-   background-color: #F2F2F2;
+   background-color: rgb(242, 242, 242);
    padding: 10px;
 }
 .section__entrees, .section__plats__principales, .section__desserts {
@@ -539,7 +539,7 @@ width: 50%;
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   border: 2px solid #F2F2F2;
+   border: 2px solid rgb(242, 242, 242);
 width: 100%;
 }
    .container__footer {
