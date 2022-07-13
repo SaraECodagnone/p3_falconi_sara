@@ -84,8 +84,9 @@ justify-content: center;
        justify-content: center;
        align-items: center;
        background-color:rgb(242, 242, 242) ;
-       width: 60%;
+       width: 100%;
        border-radius: 20px;
+       margin:auto;
    }
    
    .image__restaurants{
@@ -268,7 +269,7 @@ padding:3px;
     justify-content: space-between;
      position:relative;
     z-index:1; 
-    top:-70px;
+    top:-67px;
     bottom:0px;
     right:0px;
     left: 200px;  

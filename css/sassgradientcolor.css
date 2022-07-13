@@ -31,7 +31,7 @@
    border: none;
    color: #fff;
     border-radius: 2rem;
-    background: linear-gradient(356deg, rgb(168 110 224) 0%, rgb(180 147 222) 33%, rgb(255 147 225) 100%);
+    background: radial-gradient(rgb(168 110 224) 0%, rgb(180 147 222) 33%, rgb(255 147 225) 100%);
              transition: opacity 250ms; 
   }
  
