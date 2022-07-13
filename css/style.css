@@ -24,10 +24,7 @@
  	 .oh__my__food__page {
  		display: flex;
  		flex-wrap: wrap;
-		/* justify-content: center;
- 		width: 100%; 
-		height: auto; */
-		background-color: rgb(242, 242, 242);
+			background-color: rgb(242, 242, 242);
  	 	} 
  	.header__oh__my__food {
  		display: flex;
@@ -301,18 +298,7 @@ height: 20px;
 		width:100%;
 		margin:1px;
 	}
-	/* .cad__restaurants{
-		display: flex;
-		flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			width: auto; */
-		/* width:100%;
-	height: auto; */
-		/* border-radius: 20px;
-	margin: 10px;
-padding: 10px;
-			} */
+
 .restaurants{
 	display: flex;
 	flex-wrap: wrap;
@@ -501,13 +487,7 @@ footer p{
  		display: flex;
  		flex-wrap: wrap;
  	}
-/* .footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 10px;
- 		padding: 10px;
- 		align-items: center;
-} */
+
 .restaurant, .handshake, .mentions__legales, .contact{
 	display: flex;
 	flex-wrap: wrap;
@@ -556,8 +536,7 @@ footer p{
 	height: auto;
 		border-radius: 20px;
 			}
-		
-						.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
+	.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
 							display: flex;
 							flex-wrap: wrap;
 							 align-items: center;
@@ -566,9 +545,8 @@ footer p{
 						}		
 }
 /* Media queries devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* (and small desktop 992px and up) */
+/* (and small desktop 992px and up until 1299px) */
 @media all and (min-width: 577px)  and (max-width:1299px){  
-	@media all and (min-width: 1300px){ 
 		.oh__my__food__page{
 			display:flex;
 			flex-wrap: wrap;
@@ -583,7 +561,7 @@ footer p{
 					border-radius: 20px;
 			}
 	
-			.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
+.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -591,7 +569,6 @@ footer p{
 			width:50%;
 	}
 	}  
-	
 
 /* } */
 /**/
@@ -605,6 +582,7 @@ footer p{
 		flex-wrap: wrap;
 		min-width:1300px;
 	}
+
 .cad__restaurants{
 		display: flex;
 		flex-wrap: wrap;
@@ -613,8 +591,7 @@ footer p{
 				height: auto;
 				border-radius: 20px;
 		}
-
-		.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
+	.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
