@@ -152,6 +152,7 @@ align-items: center;
    height: 95px;
    border-radius: 20px;
    background-color: rgb(255, 255, 255);
+   box-shadow: 2px 2px 3px rgb(203, 203, 203);
    margin: 2px;
 padding: 2px;
  position:relative;
@@ -364,42 +365,6 @@ padding:3px;
     padding: 10px;
     width: 140px;
      }
-  /* Rot de 360 deg circle-check font awesome*/
-  @-webkit-keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    /*Translate Width Div validation sur l'axe X de 90px*/
-    @-webkit-keyframes tran {
-      0% { transform: translateX(0px); }
-      100% { transform: translateX(-90px); }
-    }
-    @keyframes tran {
-      0% { transform: translateX(0px); }
-      100% { transform: translateX(-90px); }
-    }
-    /*Retrecir  Width du paragraph text de 260px a 190px*/
-    @-webkit-keyframes anim-text {
-      to{ width:190px;}
-      }
-    @keyframes anim-text {
-      to{width:190px;}
-       }  
-       @keyframes slideIn{
-           from{   
-              opacity:0;
-               transform:translate3d(0, 30px, 0); 
-         }
-         to{ 
-             opacity:1;
-             transform:translate3d(0,0,0); 
-         }
-    }
-
  /**/
     /**/
     /*Footer*/
@@ -414,6 +379,15 @@ footer {
         width: 100%;
    color: rgb(255, 255, 255);
     }
+    .container__footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      margin: 10px;
+      padding: 10px;
+            } 
     footer a {
         color:rgb(255, 255, 255);
     }
@@ -435,13 +409,6 @@ footer	h3 {
         flex-wrap: wrap;
                  align-items: flex-start;
              }
-.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
-   display: flex;
-   flex-wrap: wrap;
-   margin: 10px;
-        padding: 10px;
-        align-items: center;
-}
    .restaurant, .handshake, .mentions__legales, .contact{
    display: flex;
    flex-wrap: wrap;
@@ -465,90 +432,133 @@ footer	h3 {
    width: 200px;
    height: 30px;
 }
-/*
-/*
- *Version ordinateur
- *
- */
-@media all and (min-width: 992px){
-           .menu__principale{
+           
+ /*
+  *Version mobile/portable
+  *
+  ** Small devices (max 576px ) 
+  *
+*/
+ @media all and (max-width: 576px){
+
+   .oh__my__food__page{
+     display:flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+  min-width:320px;
+  }
+  .menu__principale{
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width:100%;
+  }
+  .menu__principale h2{
+   text-align: center;
+  }
+  .section__entrees, .section__plats__principales, .section__desserts {
    display: flex;
    flex-wrap: wrap;
-       justify-content: center;
-   width: 100%;
-   background-color: rgb(242, 242, 242);
-   padding: 10px;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid rgb(242, 242, 242);
+width: 320px;
 }
-.section__entrees, .section__plats__principales, .section__desserts {
+  .footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
+                    display: flex;
+                    flex-wrap: wrap;
+                     align-items: center;
+                        width:100%;
+                        height: 75px;
+                 }		
+}
+/* Media queries devices (tablets, 577px and up) The navbar toggle appears at this breakpoint */
+/* (and small desktop 992px and up until 1299px) */
+@media all and (min-width: 577px)  and (max-width:1299px){  
+     .oh__my__food__page{
+        display:flex;
+        flex-wrap: wrap;
+        min-width:577px;
+     }
+     .section__entrees, .section__plats__principales, .section__desserts {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid rgb(242, 242, 242);
+   width: 50%;
+   }
+.footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+        width:50%;
+  }
+  }  
+
+/* } */
+/**/
+/* Version Ordinateur*/
+/* Large devices (desktops, 1300px and up) */
+/**/
+/* */
+@media all and (min-width: 1300px){ 
+  .oh__my__food__page{
+     display:flex;
+     flex-wrap: wrap;
+     min-width:1300px;
+  }
+  .section__entrees, .section__plats__principales, .section__desserts {
+   display: flex;
    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
    border: 2px solid rgb(242, 242, 242);
 width: 30%;
 }
-        .container__footer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        margin: 10px;
-        padding: 10px;
-          }
+  .footer__restaurant, .footer__handshake, .footer__mentions__legales, .footer__contact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+     width:25%;
 }
-/*
-/*
-/* Version Tablette */
-/*
-*/
-@media all and (max-width: 991.98px) and (min-width: 768px){
-       .menu__principale{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   width: 100%;
-   background-color: rgb(242, 242, 242);
-   padding: 10px;
-}
-.section__entrees, .section__plats__principales, .section__desserts {
-      display: flex;
-   flex-wrap: wrap;
-   border: 2px solid rgb(242, 242, 242);
-width: 50%;
-}
-    .container__footer {
-        display: flex;
-        flex-wrap: wrap;
-                  }
-}
-/**/
-/**/
-/* Version Mobile/Portable*/
-/**/
-/**/
-@media all and (max-width: 767.98px){
-   .menu__principale{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   background-color: rgb(242, 242, 242);
-   padding: 10px;
-}
-.section__entrees, .section__plats__principales, .section__desserts {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   border: 2px solid rgb(242, 242, 242);
-width: 100%;
-}
-   .container__footer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width:100%;
-        justify-content: center;
-        align-items: center;
-                  }
-             }
+}  
+  /* Rot de 360 deg circle-check font awesome*/
+  @-webkit-keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+ /*Translate Width Div validation sur l'axe X de 90px*/
+ @-webkit-keyframes tran {
+   0% { transform: translateX(0px); }
+   100% { transform: translateX(-90px); }
+ }
+ @keyframes tran {
+   0% { transform: translateX(0px); }
+   100% { transform: translateX(-90px); }
+ }
+ /*Retrecir  Width du paragraph text de 260px a 190px*/
+ @-webkit-keyframes anim-text {
+   to{ width:190px;}
+   }
+ @keyframes anim-text {
+   to{width:190px;}
+    }  
+    @keyframes slideIn{
+        from{   
+           opacity:0;
+            transform:translate3d(0, 30px, 0); 
+      }
+      to{ 
+          opacity:1;
+          transform:translate3d(0,0,0); 
+      }
+ }
