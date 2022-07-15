@@ -121,11 +121,13 @@ height: 20px;
 		text-align: center;
 	}
 	/* bouton gradient-color*/
-	.explorez:hover .btn__bg {
-		opacity:1;
+	.btn__bg__explorez:hover{
 		cursor:pointer;
+	}
+	.btn__bg__explorez:hover::after {
+			opacity:1;
 	  }
- .explorez{
+ .btn__bg__explorez{
 	width: 280px;
 	height: 80px;
 	border: none;
@@ -140,7 +142,8 @@ height: 20px;
 	margin: 10px;	
 }
 
-.btn__bg{
+.btn__bg__explorez::after{
+	content:"";
 	position: absolute;
 	top: 0;
 	right: 0;
