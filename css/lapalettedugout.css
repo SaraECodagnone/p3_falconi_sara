@@ -349,22 +349,45 @@ padding:3px;
     -webkit-animation: spin 2s ease forwards; 
     animation: spin 2s ease forwards ;
   }
-  .bouton{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   width: 100%;
-   height: auto;
+/**/
+/* bouton commander gradient-color*/
+/**/
+	.commander:hover .btn__co {
+		opacity:1;
+		cursor:pointer;
+	  }
+ .commander{
+	width: 280px;
+	height: 80px;
+	border: none;
+	color:rgb(255, 255, 255);
+	font-weight:bold;
+	font-size: 16px;
+	position: relative;
+	z-index: 1; 
+	background: radial-gradient(circle at top left,
+        rgb(255, 121, 218),rgb(147, 86, 220));
+	border-radius: 40px;
+	margin: 10px;	
 }
-.bouton__commander{
-    color:rgb(255, 255, 255);
-    background-color: rgb(255, 121, 218);
-    border: 2px solid rgb(255, 121, 218);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 10px;
-    width: 140px;
-     }
+
+.btn__co{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0; 
+	z-index: -1; 
+	width: 280px;
+	height: 80px;
+	border: none;
+	color: #fff;
+	 border-radius: 40px;
+	 background: radial-gradient(circle at top left, 
+	 rgb(255 147 225),rgb(168 110 224));
+			  transition: opacity 0.3s; 
+   }
  /**/
     /**/
     /*Footer*/
