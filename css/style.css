@@ -155,10 +155,10 @@ height: 20px;
 	height: 80px;
 	border: none;
 	color: #fff;
-	 border-radius: 40px;
+	 border-radius: 40px; 
 	 background: radial-gradient(circle at top left, 
 	 rgb(255 147 225),rgb(168 110 224));
-	 /* transition: opacity 0.3s;  */
+	 transition: opacity 0.3s; 
    }
   
 /* bouton foncionnement option 1 2 3*/
@@ -184,7 +184,7 @@ height: 20px;
 				justify-content: center;
 				width: 100%; 
 			}
-.c__fonctionnement{
+.c__fonctionnement:nth-child(1), .c__fonctionnement:nth-child(2), .c__fonctionnement:nth-child(3){
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -193,7 +193,7 @@ height: 20px;
 	margin:3px;
 	padding:3px;
 }
-.optn{
+.c__fonctionnement:nth-child(1) .optn, .c__fonctionnement:nth-child(2) .optn, .c__fonctionnement:nth-child(3) .optn{
 	display: flex;
 	flex-wrap: wrap;
 	width: 30px;
@@ -207,7 +207,7 @@ height: 20px;
 	top:30px;
 	left:25px;
 }
-	.bouton__fnct{
+	.c__fonctionnement:nth-child(1) .bouton__fnct, .c__fonctionnement:nth-child(2) .bouton__fnct, .c__fonctionnement:nth-child(3) .bouton__fnct{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -222,27 +222,20 @@ height: 20px;
 		position: relative;
 		z-index: 0;
 	}
-	.bouton__fnct p{
+	.c__fonctionnement:nth-child(1) .bouton__fnct p,.c__fonctionnement:nth-child(2) .bouton__fnct p,.c__fonctionnement:nth-child(3) .bouton__fnct p{
 	text-align: center;
 	}
 
-	.icone__fnct{
+	.c__fonctionnement.icone__fnct:nth-child(1) .icone__fnct, .c__fonctionnement:nth-child(2) .icone__fnct, .c__fonctionnement:nth-child(3) .icone__fnct{
 		display: flex;
 		flex-wrap: wrap;
 		margin: 3px;
 	}
-	#icone_iphone{
+	#icone_svg{
 		width:20px;
 		height: 20px;
 	}
-	#icone_list{
-		width:20px;
-		height: 20px;
-	}
-	#icone_store{
-		width:20px;
-		height: 20px;
-			}
+	
 	.titres__fnct{
 		display: flex;
 		flex-wrap: wrap;
@@ -250,15 +243,27 @@ height: 20px;
 		margin: 3px;
 			width:70%;
 			}
-			.bouton__fnct:hover {
+	.c__fonctionnement:nth-child(1):hover .bouton__fnct{
 				background-color: rgb(243,229,245);
 				cursor:pointer;
 				 }
-				 .bouton__fnct:hover .icone__fnct svg{
+	 .c__fonctionnement:nth-child(1):hover .bouton__fnct svg{
 				   fill: rgb(147,86,220);
-								}
-
-								
+	 }
+	 .c__fonctionnement:nth-child(2):hover .bouton__fnct{
+		background-color: rgb(243,229,245);
+		cursor:pointer;
+		 }
+.c__fonctionnement:nth-child(2):hover .bouton__fnct svg{
+		   fill: rgb(147,86,220);
+}
+.c__fonctionnement:nth-child(3):hover .bouton__fnct{
+	background-color: rgb(243,229,245);
+	cursor:pointer;
+	 }
+.c__fonctionnement:nth-child(3):hover .bouton__fnct svg{
+	   fill: rgb(147,86,220);
+}
  	.menu__principal {
 		display: flex;
 		flex-wrap: wrap;
@@ -269,14 +274,11 @@ height: 20px;
 	}
 
 
-.c__restaurants h2{
- 	 	width: 100%;
- 	 }	
  	 .c__restaurants a{
  	 	color: rgb(0, 0, 0);
  	 	text-decoration: none;
 		display:inline-block;
- 	 }	
+		 	 }	
 	.c__restaurants{
 		display: flex;
 		flex-wrap: wrap;
@@ -294,6 +296,10 @@ height: 20px;
 		flex-wrap: wrap;
 			width:100%;
 	}
+	
+.c__restaurants h2{
+	width: 100%;
+}	
 	.container__restaurants{
 		display:flex;
 		flex-wrap: wrap;
@@ -302,7 +308,7 @@ height: 20px;
 		margin:1px;
 	}
 
-.restaurants{
+.cad__restaurants:nth-child(1) .restaurants, .cad__restaurants:nth-child(2) .restaurants, .cad__restaurants:nth-child(3) .restaurants, .cad__restaurants:nth-child(4) .restaurants{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -313,16 +319,18 @@ height: 20px;
 	border-radius:20px;
 	margin:4px;
 	padding:1px;
-}
-
+ }
 .image__restaurant{
 display: flex;
 flex-wrap: wrap;
 width: 280px;
 height: 200px;
 position: relative;
-	z-index: 0;
-
+z-index: 0;
+bottom:0;
+left:0;
+top:0;
+right: 0;
 		}
 
 .image__restaurant img{
@@ -333,17 +341,33 @@ position: relative;
 	border-top-right-radius: 20px;
 	padding: 2px;
 }
-.nouveau1{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 60px;
+.cad__restaurants:nth-child(1) .nouveau , .cad__restaurants:nth-child(2) .nouveau{
+	display:flex;
 	color: rgb(0, 128, 0);
 	background-color: rgb(153, 226, 208);
-	 position: relative;
+	 position:relative;
 	z-index: 1;
-bottom:170px;
-left:220px;
+bottom:0;
+left:195px;
+top:-140px;
+right: 0;
+width:70px;
+height: 20px;
+}
+
+.cad__restaurants:nth-child(3) .nouveau, .cad__restaurants:nth-child(4) .nouveau{
+	opacity:0;
+		width: 60px;
+	color: rgb(0, 128, 0);
+	background-color: rgb(153, 226, 208);
+	 position:relative;
+	z-index: 1;
+bottom:0;
+left:0;
+top:0x;
+right: 0;
+width:70px;
+height: 20px;
 }
 .desc__restaurants{
 		display: flex;
@@ -400,45 +424,6 @@ left:220px;
   	}
 .icone_hearts,.icone_hearts_1,.icone_hearts_2,.icone_hearts_3:hover{
   cursor:pointer;
-}
-
-.nouveau2{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 60px;
-	color: rgb(0, 128, 0);
-	background-color: rgb(153, 226, 208);
-	 position: relative;
-	z-index: 1;
-	bottom: 170px;
-	left: 220px; 
-}
-.nouveau3{
-	opacity: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 60px;
-	color: rgb(0, 128, 0);
-	background-color: rgb(153, 226, 208);
-	 position: relative;
-	z-index: 1;
-	bottom: 170px;
-	left: 220px; 
-}
-.nouveau4{
-	opacity: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 60px;
-	color: rgb(0, 128, 0);
-	background-color: rgb(153, 226, 208);
- position: relative;
-	z-index: 1;
-	bottom: 170px;
-	left: 220px; 
 }
  	/**/
  	/*Footer*/
@@ -529,12 +514,11 @@ footer p{
 		flex-direction: column;
 	min-width:320px;
 	}
-
-	.cad__restaurants{
-		display: flex;
-		flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
+		.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
+		 display: flex;
+		flex-wrap: wrap; 
+					justify-content: center;
+			align-items: center; 
 		width:100%;
 	height: auto;
 		border-radius: 20px;
@@ -555,10 +539,10 @@ footer p{
 			flex-wrap: wrap;
 			min-width:577px;
 		}
-	.cad__restaurants{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
+	.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
+			 display: flex; 
+			 flex-wrap: wrap;
+						justify-content: center; 
 					width: 50%;
 					height: auto;
 					border-radius: 20px;
@@ -586,10 +570,10 @@ footer p{
 		min-width:1300px;
 	}
 
-.cad__restaurants{
+.cad__restaurants:nth-child(1),.cad__restaurants:nth-child(2),.cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+				justify-content: center; 
 				width: 25%;
 				height: auto;
 				border-radius: 20px;

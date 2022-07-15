@@ -349,14 +349,16 @@ padding:3px;
     -webkit-animation: spin 2s ease forwards; 
     animation: spin 2s ease forwards ;
   }
-/**/
+  /**/
 /* bouton commander gradient-color*/
 /**/
-	.commander:hover .btn__co {
+  .btn__bg__commander:hover{
+  cursor:pointer;
+  }
+	.btn__bg__commander:hover::after{
 		opacity:1;
-		cursor:pointer;
-	  }
- .commander{
+		  }
+ .btn__bg__commander{
 	width: 280px;
 	height: 80px;
 	border: none;
@@ -371,7 +373,8 @@ padding:3px;
 	margin: 10px;	
 }
 
-.btn__co{
+.btn__bg__commander::after{
+   content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -379,11 +382,9 @@ padding:3px;
 	left: 0;
 	opacity: 0; 
 	z-index: -1; 
-	width: 280px;
-	height: 80px;
 	border: none;
 	color: #fff;
-	 border-radius: 40px;
+	 border-radius: 40px; 
 	 background: radial-gradient(circle at top left, 
 	 rgb(255 147 225),rgb(168 110 224));
 			  transition: opacity 0.3s; 
