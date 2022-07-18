@@ -168,7 +168,7 @@ height: 20px;
 	justify-content: center;
 	width: 100%; 
 	height: auto;
-	padding: 1px;
+	padding: 60px 0px 60px 0px;
 	margin: 1px;
 	background-color:rgb(255, 255, 255);
 }
@@ -271,6 +271,8 @@ height: 20px;
 		align-items: center;
 		width: 100%; 
 			height: auto;
+			padding: 60px 0px 60px 0px;
+			margin:1px;
 	}
 
 
@@ -307,7 +309,6 @@ height: 20px;
 		width:100%;
 		margin:1px;
 	}
-
 .cad__restaurants:nth-child(1) .restaurants, .cad__restaurants:nth-child(2) .restaurants, .cad__restaurants:nth-child(3) .restaurants, .cad__restaurants:nth-child(4) .restaurants{
 	display: flex;
 	flex-wrap: wrap;
@@ -330,7 +331,6 @@ left:0;
 top:0;
 right: 0;
 		}
-
 .image__restaurant img{
 	width: 100%;
 	height: 100%;
@@ -362,7 +362,7 @@ height:auto;
 	z-index: 1;
 bottom:0;
 left:200px;
-top:-70x;
+top:-70px;
 right: 0;
 width:70px;
 height:auto;
@@ -503,13 +503,13 @@ footer p{
 /*@media (max-width: 576px) {  
  
 } */
- @media all and (max-width: 576px){
+ @media all and (max-width: 640px){
 
  	.oh__my__food__page{
 		display:flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-	min-width:320px;
+	min-width:310px;
 	}
 		.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
 		 display: flex;
@@ -528,13 +528,13 @@ footer p{
 								 height: 75px;
 						}		
 }
-/* Media queries devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* (and small desktop 992px and up until 1299px) */
-@media all and (min-width: 577px)  and (max-width:1299px){  
+/* Media queries devices (tablets, 640px and up) The navbar toggle appears at this breakpoint */
+/* (and small desktop 640px and up until 1299px) */
+@media all and (min-width: 640px)  and (max-width:1299px){  
 		.oh__my__food__page{
 			display:flex;
 			flex-wrap: wrap;
-			min-width:577px;
+			min-width:310px;
 		}
 	.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
 			 display: flex; 
@@ -554,12 +554,11 @@ footer p{
 	}
 	}  
 
-/* } */
 /**/
 /* Version Ordinateur*/
 /* Large devices (desktops, 1300px and up) */
 /**/
-/* */
+/**/
 @media all and (min-width: 1300px){ 
 	.oh__my__food__page{
 		display:flex;

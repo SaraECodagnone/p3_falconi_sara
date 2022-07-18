@@ -394,17 +394,6 @@ height:auto;
 	font-weight: bold;
 	font-size: 18px;
 	}
-	/* .sec_desc_plus_heart{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		align-content: center;
-		width: 270px;
-		height: 20px;
-		margin:2px;
-		padding:1px;
-		} */
 .titres__lieux{
 	display: flex;
 	flex-wrap: wrap;
@@ -538,7 +527,7 @@ footer p{
 		.oh__my__food__page{
 			display:flex;
 			flex-wrap: wrap;
-			min-width:577px;
+			min-width:640px;
 		}
 	.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
 			 display: flex; 
