@@ -228,7 +228,7 @@ height: 20px;
 		flex-wrap: wrap;
 		margin: 3px;
 	}
-	#icone_svg{
+	.icone_svg{
 		width:20px;
 		height: 20px;
 	}
@@ -342,9 +342,9 @@ right: 0;
 	background-color: rgb(153, 226, 208);
 	 position:relative;
 	z-index: 1;
-bottom:0;
+bottom:70px;
 left:200px;
-top:-70px;
+top:0px;
 right: 0;
 width:70px;
 height:auto;
@@ -357,9 +357,9 @@ height:auto;
 	background-color: rgb(153, 226, 208);
 	 position:relative;
 	z-index: 1;
-bottom:0;
+bottom:70px;
 left:200px;
-top:-70x;
+top:0;
 right: 0;
 width:70px;
 height:auto;
