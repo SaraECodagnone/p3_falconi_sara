@@ -204,8 +204,8 @@ height: 20px;
 	padding: 5px 10px;
 	position: relative;
 	z-index: 1;
-	top:30px;
-	left:25px;
+	top:60px;
+	left:-140px;
 }
 	.c__fonctionnement:nth-child(1) .bouton__fnct, .c__fonctionnement:nth-child(2) .bouton__fnct, .c__fonctionnement:nth-child(3) .bouton__fnct{
 		display: flex;
@@ -214,9 +214,9 @@ height: 20px;
 		align-items: center;
 		background-color: rgb(242, 242, 242);
 		box-shadow: 2px 2px 3px rgb(203, 203, 203);
-		border-radius: 10px;
-	width:250px;
-	height: 90px;
+		border-radius: 40px;
+	width:300px;
+	height: 75px;
 		margin: 2px;
 		padding:1px;
 		position: relative;
@@ -311,8 +311,6 @@ height: 20px;
 .cad__restaurants:nth-child(1) .restaurants, .cad__restaurants:nth-child(2) .restaurants, .cad__restaurants:nth-child(3) .restaurants, .cad__restaurants:nth-child(4) .restaurants{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
 	width:300px;
 	background-color: rgb(255, 255, 255);
 	box-shadow:4px 4px 4px rgb(116,107,107);
@@ -324,7 +322,7 @@ height: 20px;
 display: flex;
 flex-wrap: wrap;
 width: 300px;
-height: 130px;
+height: 100px;
 position: relative;
 z-index: 0;
 bottom:0;
@@ -348,11 +346,11 @@ right: 0;
 	 position:relative;
 	z-index: 1;
 bottom:0;
-left:0;
-top:0;
+left:200px;
+top:-70px;
 right: 0;
 width:70px;
-height: 20px;
+height:auto;
 }
 
 .cad__restaurants:nth-child(3) .nouveau, .cad__restaurants:nth-child(4) .nouveau{
@@ -363,24 +361,23 @@ height: 20px;
 	 position:relative;
 	z-index: 1;
 bottom:0;
-left:0;
-top:0x;
+left:200px;
+top:-70x;
 right: 0;
 width:70px;
-height: 20px;
+height:auto;
 }
 .desc__restaurants{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
 		width: 280px;
-		padding:8px;
+		padding:3px;
 			}
 
 .premier__desc{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	width: 280px;
 	height: auto;
 	margin:2px;

@@ -29,7 +29,7 @@
  	.header__oh__my__food {
  		display: flex;
  		flex-wrap: wrap;
- 			flex-direction: column;
+ 			/* flex-direction: column; */
  		align-items: center;
  		width: 100%; 
  	 	margin: 10px 10px 10px 10px;
@@ -88,7 +88,7 @@ height: 20px;
 	margin:1px;
 }
 .desc__oh__my__food__plus__bouton{
-	flex-direction: column;
+	/* flex-direction: column; */
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -168,7 +168,7 @@ height: 20px;
 	justify-content: center;
 	width: 100%; 
 	height: auto;
-	padding: 1px;
+	padding: 60px 0px 60px 0px;
 	margin: 1px;
 	background-color:rgb(255, 255, 255);
 }
@@ -204,8 +204,8 @@ height: 20px;
 	padding: 5px 10px;
 	position: relative;
 	z-index: 1;
-	top:30px;
-	left:25px;
+	top:60px;
+	left:-140px;
 }
 	.c__fonctionnement:nth-child(1) .bouton__fnct, .c__fonctionnement:nth-child(2) .bouton__fnct, .c__fonctionnement:nth-child(3) .bouton__fnct{
 		display: flex;
@@ -214,9 +214,9 @@ height: 20px;
 		align-items: center;
 		background-color: rgb(242, 242, 242);
 		box-shadow: 2px 2px 3px rgb(203, 203, 203);
-		border-radius: 10px;
-	width:250px;
-	height: 90px;
+		border-radius: 40px;
+	width:300px;
+	height: 75px;
 		margin: 2px;
 		padding:1px;
 		position: relative;
@@ -267,10 +267,13 @@ height: 20px;
  	.menu__principal {
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: column;
-		align-items: center;
+		justify-content: center;
+		/* flex-direction: column;
+		align-items: center; */
 		width: 100%; 
 			height: auto;
+			padding:60px 0px 60px 0px;
+			margin:1px;
 	}
 
 
@@ -312,7 +315,6 @@ height: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
 	width:300px;
 	background-color: rgb(255, 255, 255);
 	box-shadow:4px 4px 4px rgb(116,107,107);
@@ -324,7 +326,7 @@ height: 20px;
 display: flex;
 flex-wrap: wrap;
 width: 300px;
-height: 200px;
+height: 130px;
 position: relative;
 z-index: 0;
 bottom:0;
@@ -348,14 +350,14 @@ right: 0;
 	 position:relative;
 	z-index: 1;
 bottom:0;
-left:195px;
-top:-140px;
+left:100px;
+top:-90px;
 right: 0;
 width:70px;
-height: 20px;
+height:auto;
 }
 
-.cad__restaurants:nth-child(3) .nouveau, .cad__restaurants:nth-child(4) .nouveau{
+/* .cad__restaurants:nth-child(3) .nouveau, .cad__restaurants:nth-child(4) .nouveau{
 	opacity:0;
 		width: 60px;
 	color: rgb(0, 128, 0);
@@ -363,38 +365,36 @@ height: 20px;
 	 position:relative;
 	z-index: 1;
 bottom:0;
-left:0;
-top:0x;
+left:100px;
+top:-90x;
 right: 0;
 width:70px;
-height: 20px;
-}
+height:auto;
+} */
 .desc__restaurants{
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: column;
 		width: 280px;
-		padding:8px;
+		padding:3px;
 			}
 
-.premier__desc{
+.titres__desc{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	width: 280px;
+	align-items: center;
+	width: 230px;
 	height: auto;
 	margin:2px;
 	}
-	.desc__titre{
+	.titre__restaurant{
 	display: flex;
 	flex-wrap: wrap;
-	align-content: center;
-	width: 240px;
-	height: 20px;
+	width: 230px;
+	height: auto;
 	font-weight: bold;
 	font-size: 18px;
 	}
-	.sec_desc_plus_heart{
+	/* .sec_desc_plus_heart{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -404,8 +404,8 @@ height: 20px;
 		height: 20px;
 		margin:2px;
 		padding:1px;
-		}
-.seconde__desc{
+		} */
+.titres__lieux{
 	display: flex;
 	flex-wrap: wrap;
 	width: 230px;
@@ -433,7 +433,7 @@ height: 20px;
 		flex-wrap: wrap;
 		background-color: rgb(0, 0, 0);
 		padding: 10px;
-		margin: 10px;
+		margin: 1px;
 	width:100%;
 	justify-content:space-around;
    color: rgb(255, 255, 255);
@@ -506,12 +506,13 @@ footer p{
 /*@media (max-width: 576px) {  
  
 } */
- @media all and (max-width: 576px){
+ @media all and (max-width: 640px){
 
  	.oh__my__food__page{
 		display:flex;
 		flex-wrap: wrap;
-		flex-direction: column;
+		justify-content: center;
+		/* flex-direction: column; */
 	min-width:320px;
 	}
 		.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
@@ -533,7 +534,7 @@ footer p{
 }
 /* Media queries devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* (and small desktop 992px and up until 1299px) */
-@media all and (min-width: 577px)  and (max-width:1299px){  
+@media all and (min-width:641px)  and (max-width:1299px){  
 		.oh__my__food__page{
 			display:flex;
 			flex-wrap: wrap;
