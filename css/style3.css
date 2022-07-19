@@ -7,10 +7,6 @@
  	margin: 0;
  	padding: 0;
  }
- 
- ul {
- 	list-style-type: none;
- }
  h1{
 	 font-size: 20px;
 	 margin:1px;
@@ -101,6 +97,8 @@ height: 20px;
 		 display:flex;
 		 flex-wrap: wrap;
 		 justify-content: center;
+		 width:100%;
+		 height: auto;
 	 }
  	/*
  	*Bouton explorez nos restaurants
@@ -347,35 +345,37 @@ right: 0;
 	display:flex;
 	color: rgb(0, 128, 0);
 	background-color: rgb(153, 226, 208);
-	 position:relative;
+	 position:absolute;
 	z-index: 1;
-bottom:70px;
-left:100px;
-top:0px;
+bottom:0;
+left:200px;
+top:30px;
 right: 0;
 width:70px;
-height:auto;
+height:18px;
 }
 
-/* .cad__restaurants:nth-child(3) .nouveau, .cad__restaurants:nth-child(4) .nouveau{
+.cad__restaurants:nth-child(3) .nouveau, .cad__restaurants:nth-child(4) .nouveau{
 	opacity:0;
 		width: 60px;
 	color: rgb(0, 128, 0);
 	background-color: rgb(153, 226, 208);
-	 position:relative;
+	 position:absolute;
 	z-index: 1;
 bottom:0;
-left:100px;
-top:-90x;
+left:200px;
+top:30x;
 right: 0;
 width:70px;
-height:auto;
-} */
+height:18px;
+} 
 .desc__restaurants{
 		display: flex;
 		flex-wrap: wrap;
-		width: 280px;
+		justify-content: center;
+		width: 300px;
 		padding:3px;
+		margin:2px;
 			}
 
 .titres__desc{
@@ -385,6 +385,7 @@ height:auto;
 	width: 230px;
 	height: auto;
 	margin:2px;
+	padding:3px;
 	}
 	.titre__restaurant{
 	display: flex;
@@ -408,7 +409,7 @@ height:auto;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin:auto;
+	margin:2px;
 	padding:3px;
   	}
 .icone_hearts,.icone_hearts_1,.icone_hearts_2,.icone_hearts_3:hover{
