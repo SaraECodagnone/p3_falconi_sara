@@ -460,10 +460,10 @@ footer	h3 {
  /*
   *Version mobile/portable
   *
-  ** Small devices (max 576px ) 
+  ** Small devices (max 640pxpx ) 
   *
 */
- @media all and (max-width: 576px){
+ @media all and (max-width: 640px){
 
    .oh__my__food__page{
      display:flex;
@@ -498,13 +498,13 @@ width: 320px;
                         height: 75px;
                  }		
 }
-/* Media queries devices (tablets, 577px and up) The navbar toggle appears at this breakpoint */
+/* Media queries devices (tablets, 640px and up) The navbar toggle appears at this breakpoint */
 /* (and small desktop 992px and up until 1299px) */
-@media all and (min-width: 577px)  and (max-width:1299px){  
+@media all and (min-width: 641px)  and (max-width:1299px){  
      .oh__my__food__page{
         display:flex;
         flex-wrap: wrap;
-        min-width:577px;
+        min-width: 641px;
      }
      .section__entrees, .section__plats__principales, .section__desserts {
       display: flex;
