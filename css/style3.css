@@ -126,8 +126,8 @@ height: 20px;
 			opacity:1;
 	  }
  .btn__bg__explorez{
-	width: 280px;
-	height: 80px;
+	width: 180px;
+	height: 40px;
 	border: none;
 	color:rgb(255, 255, 255);
 	font-weight:bold;
@@ -138,6 +138,7 @@ height: 20px;
         rgb(255, 121, 218),rgb(147, 86, 220));
 	border-radius: 40px;
 	margin: 10px;	
+	font-size: 0.8rem;
 }
 
 .btn__bg__explorez::after{
@@ -149,10 +150,8 @@ height: 20px;
 	left: 0;
 	opacity: 0; 
 	z-index: -1; 
-	width: 280px;
-	height: 80px;
 	border: none;
-	color: #fff;
+	color: rgb(255, 255, 255);
 	 border-radius: 40px; 
 	 background: radial-gradient(circle at top left, 
 	 rgb(255 147 225),rgb(168 110 224));
