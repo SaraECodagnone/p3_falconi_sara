@@ -49,21 +49,22 @@ a {
    flex-wrap: wrap;
    justify-content: center;
    width: 100%;
-   margin:0px 0px 140px 0px;
+   margin:0px 0px 10px 0px;
    padding:0px 0px 10px 0px;
    }
    .image__restaurants{
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      min-width: 300px;
-      max-width: 640px;
-      height: 280px;
-                  position: relative;
+      justify-content: center; 
+    min-width:300px;
+    max-width: 600px;
+   height:280px;
+   position: absolute;
    }
    .image__restaurants img{
       width:100%;
             height: auto;
+            object-fit:scale-down;
    }
    .desc_restaurants{
       display: flex;
