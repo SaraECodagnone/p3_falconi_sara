@@ -181,29 +181,7 @@ height: 20px;
 				justify-content: center;
 				width: 100%; 
 			}
-.c__fonctionnement:nth-child(1), .c__fonctionnement:nth-child(2), .c__fonctionnement:nth-child(3){
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
-	width: 300px; 
-	margin:3px;
-	padding:3px;
-}
-.c__fonctionnement:nth-child(1) .optn, .c__fonctionnement:nth-child(2) .optn, .c__fonctionnement:nth-child(3) .optn{
-	display: flex;
-	flex-wrap: wrap;
-	width: 30px;
-	height: 30px;
-	border-radius: 20px;
-	color: rgb(255, 255, 255);
-	background-color: rgb(147, 86, 220);
-	padding: 5px 10px;
-	position: relative;
-	z-index: 1;
-	top:60px;
-	left:-140px;
-}
+
 	.c__fonctionnement:nth-child(1) .bouton__fnct, .c__fonctionnement:nth-child(2) .bouton__fnct, .c__fonctionnement:nth-child(3) .bouton__fnct{
 		display: flex;
 		flex-wrap: wrap;
@@ -504,6 +482,30 @@ footer p{
 		/* flex-direction: column; */
 	min-width:320px;
 	}
+	.c__fonctionnement:nth-child(1), .c__fonctionnement:nth-child(2), .c__fonctionnement:nth-child(3){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		/* width: 300px;  */
+		width:100%;
+		margin:3px;
+		padding:3px;
+	}
+	.c__fonctionnement:nth-child(1) .optn, .c__fonctionnement:nth-child(2) .optn, .c__fonctionnement:nth-child(3) .optn{
+		display: flex;
+		flex-wrap: wrap;
+		width: 30px;
+		height: 30px;
+		border-radius: 20px;
+		color: rgb(255, 255, 255);
+		background-color: rgb(147, 86, 220);
+		padding: 5px 10px;
+		position: relative;
+		z-index: 1;
+		top:30px;
+		left:20px;
+	}
 		.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
 		 display: flex;
 		flex-wrap: wrap; 
@@ -528,6 +530,30 @@ footer p{
 			display:flex;
 			flex-wrap: wrap;
 			min-width:640px;
+		}
+		.c__fonctionnement:nth-child(1), .c__fonctionnement:nth-child(2), .c__fonctionnement:nth-child(3){
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: center;
+			/* width: 300px;  */
+			width:50%;
+			margin:3px;
+			padding:3px;
+		}
+		.c__fonctionnement:nth-child(1) .optn, .c__fonctionnement:nth-child(2) .optn, .c__fonctionnement:nth-child(3) .optn{
+			display: flex;
+			flex-wrap: wrap;
+			width: 30px;
+			height: 30px;
+			border-radius: 20px;
+			color: rgb(255, 255, 255);
+			background-color: rgb(147, 86, 220);
+			padding: 5px 10px;
+			position: relative;
+			z-index: 1;
+			top:30px;
+			left:20px;
 		}
 	.cad__restaurants:nth-child(1), .cad__restaurants:nth-child(2), .cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
 			 display: flex; 
@@ -559,7 +585,30 @@ footer p{
 		flex-wrap: wrap;
 		min-width:1300px;
 	}
-
+	.c__fonctionnement:nth-child(1), .c__fonctionnement:nth-child(2), .c__fonctionnement:nth-child(3){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		/* width: 300px;  */
+		width:30%;
+		margin:3px;
+		padding:3px;
+	}
+	.c__fonctionnement:nth-child(1) .optn, .c__fonctionnement:nth-child(2) .optn, .c__fonctionnement:nth-child(3) .optn{
+		display: flex;
+		flex-wrap: wrap;
+		width: 30px;
+		height: 30px;
+		border-radius: 20px;
+		color: rgb(255, 255, 255);
+		background-color: rgb(147, 86, 220);
+		padding: 5px 10px;
+		position: relative;
+		z-index: 1;
+		top:30px;
+		left:20px;
+	}
 .cad__restaurants:nth-child(1),.cad__restaurants:nth-child(2),.cad__restaurants:nth-child(3), .cad__restaurants:nth-child(4){
 		display: flex;
 		flex-wrap: wrap;
