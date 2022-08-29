@@ -63,7 +63,9 @@ a {
    }
    .image__restaurants img{
       width:100%;
-    height:auto;
+      min-height: 240px;
+      max-height: 500px;
+   /* height:auto;*/
             object-fit:cover;
    }
    .desc_restaurants{
@@ -120,7 +122,7 @@ margin:0px 0px 10px 0px;
    flex-wrap: wrap;
  width: 100%;
 }
-.plats__couts_1,.plats__couts_2, .plats__couts_3 {
+.plats__couts_1,.plats__couts_2, .plats__couts_3, .plats__couts_4 {
    display: flex;
    flex-wrap: wrap; 
    justify-content: center;
@@ -152,6 +154,10 @@ overflow: hidden;
 .section__entrees .plats__couts_3{
    opacity:0;
    animation:slideIn 1s ease forwards 4s;
+}
+.section__entrees .plats__couts_4{
+   opacity:0;
+   animation:slideIn 1s ease forwards 5s;
 }
 /* Animation Apparition progresive plats principales*/
 .section__plats__principales h2{
@@ -188,6 +194,7 @@ overflow: hidden;
    opacity:0;
    animation:slideIn 1s ease forwards 12s;
 }
+
 .plats{
    display: flex;
 flex-wrap: wrap;
