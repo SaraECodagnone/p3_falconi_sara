@@ -57,15 +57,11 @@ a {
       justify-content: center; 
    min-width:300px;
   max-width: 600px;
-  min-height: 240px;
-  max-height: 500px;
    position: relative;
    }
    .image__restaurants img{
       width:100%;
-      min-height: 240px;
-      max-height: 500px;
-   /* height:auto;*/
+        height:auto;
             object-fit:cover;
    }
    .desc_restaurants{
@@ -254,12 +250,12 @@ padding:3px;
     justify-content: space-between;
      position:relative;
     z-index:1; 
-    top:-67px;
+    top:-76px;
     bottom:0px;
     right:0px;
     left: 200px;  
-    width:90px;
-    height: 90px;
+    width:94px;
+    height: 104px;
     opacity:0;
     overflow:hidden;
     margin:2px;
@@ -274,15 +270,15 @@ padding:3px;
     bottom:0px;
     right:0px;
     left: 0px;  
-       width: 90px; 
-       height:90px;
+       width: 94px; 
+       height:104px;
              margin:0px;  
        border-bottom-right-radius: 25px;
        border-top-right-radius: 25px; 
   }
   #svg_square{
-    width: 90px; 
-    height:90px;
+    width: 94px; 
+    height:104px;
     margin:0px;  
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px; 
@@ -299,7 +295,7 @@ padding:3px;
   color:rgb(153, 226, 208);
     width:40px;
     height: 40px;
-    margin:0px;
+    margin:8%;
     border-radius: 40px;
   }
   #svg_circleok{
@@ -453,10 +449,10 @@ footer	h3 {
  /*
   *Version mobile/portable
   *
-  ** Small devices (max 640pxpx ) 
+  ** Small devices (max 768px ) 
   *
 */
- @media all and (max-width: 640px){
+ @media all and (max-width: 768px){
 
    .oh__my__food__page{
      display:flex;
@@ -494,9 +490,9 @@ width:100%;
                         /* height: 75px; */
                  }		
 }
-/* Media queries devices (tablets, 640px and up) The navbar toggle appears at this breakpoint */
-/* (and small desktop 992px and up until 1299px) */
-@media all and (min-width: 641px)  and (max-width:1299px){  
+/* Media queries devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* (and small desktop 769px and up until 992px) */
+@media all and (min-width: 769px)  and (max-width:992px){  
      .oh__my__food__page{
         display:flex;
         flex-wrap: wrap;
@@ -530,10 +526,10 @@ width:100%;
 /**/
 /**/
 /* Version Ordinateur*/
-/* Large devices (desktops, 1300px and up) */
+/* Large devices (desktops, 993px and up) */
 /**/
 /* */
-@media all and (min-width: 1300px){ 
+@media all and (min-width: 993px){ 
   .oh__my__food__page{
      display:flex;
      flex-wrap: wrap;
